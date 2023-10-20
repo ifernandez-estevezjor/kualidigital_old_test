@@ -1567,7 +1567,7 @@ span {
 }
 
 .pt-120 {
-    padding-top: 120px;
+    padding-top: 0px;
 }
 
 .pt-125 {
@@ -2128,12 +2128,12 @@ h6 {
     color: #121D2C;
     margin: 0;
     line-height: 1.2;
-    font-family: "Roboto", sans-serif;
+    /*font-family: "Roboto", sans-serif;*/
     letter-spacing: 1px;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 42px;
     line-height: 1.2em;
 }
 

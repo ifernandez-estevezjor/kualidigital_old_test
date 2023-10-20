@@ -46,6 +46,8 @@
 	
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /*** 
 
 ====================================================================
@@ -528,7 +530,8 @@ h6 {
 	background: none;
 	font-weight: 700;
 	color: var(--heading-color);
-	font-family: var(--font-family-poppins);
+	/*font-family: var(--font-family-poppins);*/
+	font-family: 'Poppins', sans-serif;
 }
 
 input,
@@ -553,7 +556,7 @@ p {
 	position: relative;
 	line-height: 1.8em;
 	font-size: var(--font-15);
-	color: var(--dark-color);
+	/*color: var(--dark-color);*/
 	font-family: var(--font-family-poppins);
 }
 
@@ -1121,8 +1124,7 @@ img {
 	padding: 13px 38px 13px;
 	font-size: var(--font-16);
 	text-transform: capitalize;
-	color: var(--white-color);
-
+	color: #ffffff;
 	background: var(--main-color-four);
 	background: -webkit-linear-gradient(to right, var(--main-color-four) 0%, var(--main-color-five) 100%);
 	background: -moz-linear-gradient(to right, var(--main-color-four) 0%, var(--main-color-five) 100%);
@@ -1132,6 +1134,8 @@ img {
 .btn-style-seven .txt {
 	position: relative;
 	z-index: 1;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
 }
 
 .btn-style-seven:before {
