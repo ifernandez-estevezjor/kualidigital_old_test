@@ -874,6 +874,118 @@
     background-position: center top;
 }*/
 
+/* Pricing Section Empresarial */
+.price-block{
+	position:relative;
+	padding-bottom:var(--padding-bottom-30);
+}
+
+.price-block .inner-box {
+    position: relative;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    padding-bottom: var(--padding-bottom-40);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.10);
+}
+
+.price-block .upper-box {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.price-block .upper-box:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.05;
+    background-color: var(--main-color);
+}
+
+.price-block .icon-list {
+    position: relative;
+}
+
+.price-block .icon-list li {
+    position: relative;
+    width: 76px;
+    height: 76px;
+    padding: 14px;
+    margin: 0px 3px;
+    border-radius: 50px;
+    display: inline-block;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.10);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.price-block .upper-box h4 {
+    margin-top: var(--margin-top-20);
+}
+
+.price-block .upper-box h4 span {
+    display: block;
+    color: var(--main-color);
+    font-size: var(--font-18);
+    margin-top: var(--margin-top-5);
+}
+
+.price-block .upper-box:after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 63px;
+    background: url(../images/business/pattern-5.png) repeat-x;
+}
+
+.price-block .lower-box {
+    position: relative;
+    padding-left: var(--padding-left-35);
+    padding-right: var(--padding-right-35);
+	font-family: 'Poppins', sans-serif;
+}
+
+.price-block .price-list {
+    position: relative;
+}
+
+.price-block .price-list li {
+    position: relative;
+    font-size: var(--font-15);
+    color: var(--dark-color);
+    padding-left: var(--padding-left-25);
+    margin-bottom: var(--margin-bottom-15);
+}
+
+.price-block .price-list li:before {
+    position: absolute;
+    content: "\f00c";
+    left: 0px;
+    color: var(--main-color);
+    font-family: 'FontAwesome';
+}
+
+.price-block .button-box {
+    position: relative;
+    margin-top: var(--margin-top-30);
+}
+
+.price-block .button-box .theme-btn {
+    width: 100%;
+}
+/*-------------------------------*/
+
 .pricing-section-four{
 	position:relative;
 	padding:110px 0px 70px;
@@ -6849,6 +6961,12 @@
     font-size: var(--font-16);
     margin-top: var(--margin-top-15);
     font-family: var(--font-family-Sen);
+}
+
+.form-column{
+	/*background-color: var(--dark-color-seven);*/
+	padding: 30px;
+	margin-bottom: 30px;
 }
 
 .form-column{

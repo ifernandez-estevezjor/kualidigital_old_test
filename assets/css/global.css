@@ -750,6 +750,7 @@ img {
 
 .list-style-two {
 	position: relative;
+	font-family: 'Poppins', sans-serif;
 }
 
 .list-style-two li {
@@ -959,7 +960,7 @@ img {
 	padding: 13px 40px 13px;
 	font-size: var(--font-16);
 	text-transform: capitalize;
-	color: var(--white-color);
+	color: #ffffff;
 	background-color: var(--main-color);
 }
 
@@ -990,6 +991,7 @@ img {
 .btn-style-four .txt {
 	position: relative;
 	z-index: 1;
+	color: #ffffff;
 }
 
 .btn-style-four i {
@@ -1037,7 +1039,7 @@ img {
 	transition: all 0.4s;
 	-webkit-transform: scale(0.2, 1);
 	transform: scale(0.2, 1);
-	background-color: var(--white-color);
+	/*background-color: var(--white-color);*/
 }
 
 .btn-style-five:hover::before {
@@ -1834,7 +1836,7 @@ img {
 
 .sec-title h2 {}
 
-.sec-title .title {
+/*.sec-title .title {
 	position: relative;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -1842,6 +1844,17 @@ img {
 	font-size: var(--font-18);
 	text-transform: uppercase;
 	margin-bottom: var(--margin-bottom-15);
+}*/
+
+.sec-title .title {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--main-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: var(--margin-bottom-15);
+	font-family: 'Poppins', sans-serif;
 }
 
 .sec-title .text {
