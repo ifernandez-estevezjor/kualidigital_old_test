@@ -26,3 +26,4 @@
 # Modificaciones 25/10/2023
 - Se enviaron las medidas de las imágenes en general para toda la plantilla.
 - Errores menores detectados, se han corregido.
+- Se cambió el tipo de la pestaña Contacto y crear anclas.
