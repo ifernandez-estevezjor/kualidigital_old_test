@@ -2518,7 +2518,8 @@ h6 {
 }
 
 .main_menu ul .dropdown>a::after {
-    content: "\f078";
+    /*content: "\f078";*/
+    /*content: "\f0dd";*/
     font-size: 12px;
     transform: translateY(-1px);
     display: inline-block;
