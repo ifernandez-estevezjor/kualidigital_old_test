@@ -874,6 +874,10 @@
     background-position: center top;
 }*/
 
+.text-faq{
+	font-family: 'Poppins',  sans-serif;
+}
+
 /* Pricing Section Empresarial */
 .price-block{
 	position:relative;
