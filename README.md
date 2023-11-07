@@ -27,3 +27,8 @@
 - Se enviaron las medidas de las imágenes en general para toda la plantilla.
 - Errores menores detectados, se han corregido.
 - Se cambió el tipo de la pestaña Contacto y crear anclas.
+
+# Modificaciones 06/11/2023
+- Se cambiaron los nombres de las páginas y en el menú de navegación.
+- Modificación sección de la página streaming.
+- Se cambiaron el nombre de las carpetas donde se guardan las imágenes de cada sección de las páginas.
