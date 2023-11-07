@@ -32,3 +32,10 @@
 - Se cambiaron los nombres de las páginas y en el menú de navegación.
 - Modificación sección de la página streaming.
 - Se cambiaron el nombre de las carpetas donde se guardan las imágenes de cada sección de las páginas.
+
+# Modificaciones 07/11/2023
+- Crear carrusel para los canales de la sección streaming.
+- Verificar el funcionamiento del carrusel de los logos en la sección streaming.
+- Se crearon páginas por separado para los pdf legales.
+- Se agregaron los pdf de los productos populares en el index.
+- Creación del formulario para contratar 50 megas.
