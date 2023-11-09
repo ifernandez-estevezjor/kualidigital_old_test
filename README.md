@@ -39,3 +39,11 @@
 - Se crearon páginas por separado para los pdf legales.
 - Se agregaron los pdf de los productos populares en el index.
 - Creación del formulario para contratar 50 megas.
+
+# Modificaciones 08/11/2023
+- Continuación del formulario para contrar 50 megas.
+- Se asignaron campos obligatorios.
+- Se agregó select Estado/Municipio cargando los datos mediante javascript.
+- Validación de campos mediante javascript (pendiente).
+- Cambio de imágenes para productos en el home (VectorMax quedó pequeña).
+- Creación del archivo que envía los datos del formulario para los paquetes (pendiente).

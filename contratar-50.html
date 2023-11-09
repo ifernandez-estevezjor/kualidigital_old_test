@@ -29,13 +29,10 @@
         <link href="assets/css/odometer.css" rel="stylesheet">
         <link href="assets/css/metisMenu.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
-
-        <style>
-            .error {color: #FF0000;}
-        </style>
+        <link href="assets/css/validation.css" rel="stylesheet">
     </head>
 <body>
-    
+
 <div class="body_wrap">
 
     <!-- preloder start -->
@@ -255,63 +252,6 @@
     </section>
     <!-- End Page Title -->
 
-    <?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-    
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
-
     <!-- Contact Page Section -->
     <section class="contact-page-section">
         <div class="auto-container">
@@ -327,44 +267,80 @@ function test_input($data) {
 				
 				<!-- Contact Form -->
 				<div class="contact-form">
-                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  <br><br>
-  Website: <input type="text" name="website" value="<?php echo $website;?>">
-  <span class="error"><?php echo $websiteErr;?></span>
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-  <span class="error">* <?php echo $genderErr;?></span>
-  <br><br>
-  <input type="submit" name="submitForm" value="Submit">  
-</form>
-					<!-- <form method="post" action="sendmessage.php" class="contact_form" id="contact_form">
+                    <form action="contacto-planes.php" id="signup" class="form" method="post" enctype="multipart/form-data">
+                        <div class="row clearfix">
+                            <div class="form-field col-md-12">
+                                <input class="form-control" type="text" name="nombre_completo" id="nombre_completo" autocomplete="off" placeholder="Nombre Completo">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4">
+                                <input class="form-control" type="text" name="50megasClasico" id="50megasClasico" autocomplete="off" value="50megasClasico" disabled required>
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4">
+                                <input class="form-control" type="text" name="tel_celular" id="tel_celular" autocomplete="off" placeholder="Teléfono Celular">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4">
+                                <input class="form-control" type="text" name="tel_otro" id="tel_otro" autocomplete="off" placeholder="Teléfono Otro">
+                                <small></small>
+                            </div>
+                            <div class="form-field">
+                                <input type="submit" name="submitForm" value="Enviar" class="btn">
+                            </div>
+                        </div>
+                        </form>
+                    </form>
+                    <!-- <form name="f1" action="contacto-index.php" onsubmit="return validate()" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control border-top-0 border-start-0 border-end-0" placeholder="Nombre">
+                                <span id="nameinput" style="color:red"></span>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="mobile" class="form-control border-top-0 border-start-0 border-end-0" placeholder="Teléfono">
+                                <span id="mobileinput" style="color:red"></span>
+                                
+                                <input type="text" name="zipcode" class="form-control border-top-0 border-start-0 border-end-0 my-3" placeholder="Código Postal">
+                                <span id="zipcodeinput" style="color:red"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-end">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Aceptar <a href="./assets/docs/Aviso_Privacidad.pdf" class="text-decoration-none">Aviso de Privacidad</a>.</label>
+                            </div>
+                            <input type="text" name="subject" value="Mensaje del Cliente" hidden>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 mt-3">
+                                <div class="g-recaptcha" data-sitekey="6LcLyLQnAAAAAHa0UaVR-AvtS6j16s_K7_uU4d1o" data-callback="correctCaptcha"></div>
+                            </div>
+                        </div>
+                        <div class="row text-center my-3">
+                            <div class="col-12">
+                                <button type="submit" value="Submit" name="submitForm" class="btn btn-primary rounded-pill">Quiero que me llamen</button>
+                            </div>
+                        </div>
+                    </form> -->
+					<!-- <form method="post" action="contacto-planes.php" name="f1" id="contact_form" onsubmit="return validate()" enctype="multipart/form-data">
 						<div class="row clearfix">
 							
-                            <div class="col-lg-12 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="name" placeholder="*Nombre Completo">
-                                <span class="error">* <?php echo $nameErr; ?> </span>
-                            </div>
+							<div class="col-lg-12 col-md-6 col-sm-12 form-group input-control">
+								<input type="text" name="nombre_completo" placeholder="*Nombre Completo">
+                                <span id="nombre_completoinput" style="color:red"></span>
+							</div>
 
 							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="plan" value="50megasClasico" placeholder="50 Megas - CLÁSICO" disabled required>
+								<input type="text" name="planes" value="50megasClasico" placeholder="50 Megas - CLÁSICO" disabled required>
 							</div>
 							
 							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="tel_celular" placeholder="*Teléfono Celular" required>
+								<input type="tel" name="tel_uno" placeholder="*Teléfono Celular" required>
 							</div>
 
 							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="tel_otro" placeholder="Otro No. de Teléfono" required>
+								<input type="tel" name="tel_dos" placeholder="Otro No. de Teléfono" required>
 							</div>
 
 							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -383,12 +359,12 @@ function test_input($data) {
 							</div>
 							
 							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" name="aviso_privacidad" id="customCheck1" required>
+								<input type="checkbox" class="custom-control-input" name="aviso_privacidad" id="aviso_privacidad" required>
                                 <label class="custom-control-label" for="customCheck1"><a href="aviso-de-privacidad.html" class="text-secondary">*Acepto Aviso de Privacidad</a></label>
 							</div>
                             
 							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-								<button class="theme-btn btn-style-four" type="submit"><span class="txt text-white">Enviar</span></button>
+								<button class="theme-btn btn-style-four" type="submit" value="Submit" name="submitForm"><span class="txt text-white">Enviar</span></button>
 							</div>
 							
 						</div>
@@ -570,5 +546,6 @@ function test_input($data) {
     <script src="assets/js/script.js"></script>
     <script src="assets/js/municipios.js"></script>
     <script src="assets/js/select_estados.js"></script>
+    <script src="assets/js/validation.js"></script>
 </body>
 </html>

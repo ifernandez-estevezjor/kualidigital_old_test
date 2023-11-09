@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>KualiDigital - Generación Clásico 50 Megas</title>
+        <title>KualiDigital - Comunidad Élite 500 Megas</title>
         <link rel="shortcut icon" type="image/x-icon" href="assets/images/general/favicon.ico">
 
         <link href="assets/css/animate.css" rel="stylesheet">
@@ -29,10 +29,6 @@
         <link href="assets/css/odometer.css" rel="stylesheet">
         <link href="assets/css/metisMenu.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
-
-        <style>
-            .error {color: #FF0000;}
-        </style>
     </head>
 <body>
     
@@ -246,71 +242,20 @@
     <!-- Page Title -->
     <section class="page-title" style="background-image: url(assets/images/contactanos/10.jpg);margin-top: 96px;">
         <div class="auto-container">
-            <h2>Generación Clásico 50 Megas</h2>
+            <h2>Comunidad Élite 500 Megas</h2>
             <ul class="bread-crumb clearfix">
                 <li><a href="index.html">Home</a></li>
-                <li>Generación Clásico 50 Megas</li>
+                <li>Comunidad Élite 500 Megas</li>
             </ul>
         </div>
     </section>
     <!-- End Page Title -->
 
     <?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-    
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
+        $usuario = 'root';
+        $password = '#Admin01#';
+        $db = new PDO('mysql:host=localhost;dbname=estados_mexico', $usuario, $password);
+    ?>
 
     <!-- Contact Page Section -->
     <section class="contact-page-section">
@@ -322,77 +267,59 @@ function test_input($data) {
 				<div class="form-title-box">
 					<h3>Generación Clásico 50 Megas</h3>
                     <h4>Déjanos tus datos</h4>
-                    <p class="text-dark">Los campos marcados con (*) son obligatorios.</p>
 				</div>
 				
 				<!-- Contact Form -->
 				<div class="contact-form">
-                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  <br><br>
-  Website: <input type="text" name="website" value="<?php echo $website;?>">
-  <span class="error"><?php echo $websiteErr;?></span>
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-  <span class="error">* <?php echo $genderErr;?></span>
-  <br><br>
-  <input type="submit" name="submitForm" value="Submit">  
-</form>
-					<!-- <form method="post" action="sendmessage.php" class="contact_form" id="contact_form">
+					<form method="post" action="sendemail.php" id="contact-form">
 						<div class="row clearfix">
 							
-                            <div class="col-lg-12 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="name" placeholder="*Nombre Completo">
-                                <span class="error">* <?php echo $nameErr; ?> </span>
-                            </div>
+							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+								<input type="text" name="name" placeholder="Nombre(s)" required>
+							</div>
 
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="plan" value="50megasClasico" placeholder="50 Megas - CLÁSICO" disabled required>
+							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+								<input type="text" name="last_name" placeholder="Apellidos" required>
 							</div>
 							
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="tel_celular" placeholder="*Teléfono Celular" required>
+							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+								<input type="email" name="email" placeholder="Email" required>
+							</div>
+							
+							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+								<input type="text" name="phone" placeholder="Teléfono" required>
 							</div>
 
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="tel_otro" placeholder="Otro No. de Teléfono" required>
-							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <select class="form-control" name="estado" id="estado"></select>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <select class="form-control" name="municipio" id="municipio"></select>
+							<div class="col-lg-12 col-md-6 col-sm-12 form-group">
+                            <select class="form-control" >
+                                <option value="">Seleccione:</option>
+                                <?php
+                                $query = $db->prepare("SELECT * FROM estados");
+                                $query->execute();
+                                $data = $query->fetchAll();
+                                
+                                foreach ($data as $valores):
+                                echo '<option value="'.$valores["id"].'">'.$valores["estados"].'</option>';
+                                endforeach;
+                                ?>
+                                </select>
 							</div>
 
                             <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="colonia_localidad" placeholder="*Colonia o Localidad">
-							</div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="codigo_postal" placeholder="Código Postal">
+								<input type="hidden" name="50m" required>
 							</div>
 							
 							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" name="aviso_privacidad" id="customCheck1" required>
-                                <label class="custom-control-label" for="customCheck1"><a href="aviso-de-privacidad.html" class="text-secondary">*Acepto Aviso de Privacidad</a></label>
+								<input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1"><a href="#" class="text-secondary">Aviso de Privacidad</a></label>
 							</div>
                             
 							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-								<button class="theme-btn btn-style-four" type="submit"><span class="txt text-white">Enviar</span></button>
+								<button class="theme-btn btn-style-four" type="submit" name="submit-form"><span class="txt text-white">Enviar</span></button>
 							</div>
 							
 						</div>
-					</form> -->
+					</form>
 				</div>
 				
 			</div>
@@ -568,7 +495,5 @@ function test_input($data) {
     <script src="assets/js/cursor-bundle.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/municipios.js"></script>
-    <script src="assets/js/select_estados.js"></script>
 </body>
 </html>
