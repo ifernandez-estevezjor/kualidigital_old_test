@@ -74,21 +74,26 @@
     border-color: var(--success-color);
 }
 
-.form-field label {
+.form-field textarea {
+    border: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 10px;
     margin-bottom: 5px;
     font-size: 14px;
     display: block;
+    width: 100%;
+    height: 50px;
 }
 
-.form-field label:focus {
+.form-field textarea:focus {
     outline: none;
 }
 
-.form-field.error label {
+.form-field.error textarea {
     border-color: var(--error-color);
 }
 
-.form-field.success label {
+.form-field.success textarea {
     border-color: var(--success-color);
 }
 

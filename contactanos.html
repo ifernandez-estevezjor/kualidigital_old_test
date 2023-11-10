@@ -384,98 +384,86 @@
 						<div class="title-box" id="contact-form">
 							<h3>Información y Soporte</h3>
 							<div class="text">Déjanos tus datos y nuestro equipo se pondrá en contacto contigo.</div>
+							<div class="text">Los campos marcados con (*) son obligatorios.</div>
 						</div>
 						
 						<!-- Client Form -->
 						<div class="client-form">
-							<form method="post" action="contact.html">
+							<form action="contact.html" id="signup" method="post">
 								<div class="row clearfix">
-								
-									<!-- Form Group -->
-									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="firstname" value="" placeholder="Nombre(s)" required>
-									</div>
-									
-									<!-- Form Group -->
-									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="lastname" value="" placeholder="Apellidos" required>
+
+									<div class="form-field col-lg-6 col-md-6 col-sm-12 mb-3">
+										<input type="text" name="nombre_completo" id="nombre_completo" placeholder="*Nombre Completo">
+                                        <small></small>
 									</div>
 
-									<!-- Form Group -->
-									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="contract" value="" placeholder="No. de Contrato">
+									<div class="form-field col-lg-6 col-md-6 col-sm-12">
+										<input type="text" name="num_contrato" placeholder="No. de Contrato">
 									</div>
 
-									<!-- Form Group -->
-									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="state" value="" placeholder="Estado" required>
+									<div class="form-field col-lg-6 col-md-6 col-sm-12 mb-3">
+										<input type="text" name="tel_celular" id="tel_celular" placeholder="*Teléfono Celular">
+                                        <small></small>
 									</div>
 
-									<!-- Form Group -->
-									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="municipal" value="" placeholder="Municipio" required>
+									<div class="form-field col-lg-6 col-md-6 col-sm-12">
+										<input type="text" name="tel_numero" placeholder="Otro Teléfono">
 									</div>
 
-									<!-- Form Group -->
-									<div class="form-group col-lg-6 col-md-6 col-sm-12">
-										<input type="text" name="town" value="" placeholder="Colonia" required>
+									<div class="form-field col-lg-6 col-md-6 col-sm-12 mb-3">
+										<select name="estado" id="estado"></select>
 									</div>
 
-                                    <!-- Form Group -->
-									<div class="form-group col-lg-6 col-md-12 col-sm-12">
-										<input type="text" name="phone" value="" placeholder="Teléfono" required>
-									</div>
-									
-									<!-- Form Group -->
-									<div class="form-group col-lg-6 col-md-12 col-sm-12">
-										<input type="email" name="email" value="" placeholder="Email" required>
+									<div class="form-field col-lg-6 col-md-6 col-sm-12">
+										<select name="municipio" id="municipio"></select>
 									</div>
 
-									<!-- Form Group -->
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<select class="form-group" name="" id="">
-                                            <option selected>Motivo de Consulta</option>
-                                            <option value="50_megas">Me interesa Plan 50 Megas</option>
-                                            <option value="100_megas">Me interesa Plan 100 Megas</option>
-                                            <option value="200_megas">Me interesa Plan 200 Megas</option>
-                                            <option value="500_megas">Me interesa Plan 500 Megas</option>
+									<div class="form-field col-lg-6 col-md-12 col-sm-12 mb-3">
+										<input type="text" name="colonia_localidad" id="colonia_localidad" placeholder="Colonia o Localidad" required>
+									</div>
+
+									<div class="form-field col-lg-6 col-md-12 col-sm-12">
+										<input type="text" name="codigo_postal" id="codigo_postal" placeholder="Código Postal" required>
+									</div>
+
+									<div class="form-field col-lg-12 col-md-12 col-sm-12">
+										<select class="form-group" name="motivo_consulta" id="motivo_consulta">
+                                            <option selected>*Motivo de Consulta</option>
+                                            <option value="50megas">Me interesa Plan 50 Megas</option>
+                                            <option value="100megas">Me interesa Plan 100 Megas</option>
+                                            <option value="200megas">Me interesa Plan 200 Megas</option>
+                                            <option value="500megas">Me interesa Plan 500 Megas</option>
                                         </select>
 									</div>
 
-									<!-- Form Group -->
-									<div class="form-group">
-										<textarea name="message" value="" placeholder="Escribe tu mensaje..." cols="80" rows="100" required></textarea>
+									<div class="form-field col-lg-12 col-md-12 col-sm-12">
+										<textarea name="message" id="message" placeholder="*Escribe tu mensaje..." cols="60" rows="150"></textarea>
 									</div>
 									
-									<!-- Form Group -->
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+									<div class="form-field col-lg-12 col-md-12 col-sm-12">
 										<div class="text-contact">¿Cómo prefiero ser contactado?</div>
 										<div class="row clearfix">
-											<!-- Column -->
 											<div class="column col-lg-3 col-md-4 col-sm-12">
 												<div class="radio-box">
-													<input type="radio" name="remember-password" id="type-1"> 
-													<label for="type-1">Email</label>
+													<input type="radio" name="llamada" id="type-1"> 
+													<label for="type-1">Llamada</label>
 												</div>
 											</div>
-											<!-- Column -->
 											<div class="column col-lg-3 col-md-4 col-sm-12">
 												<div class="radio-box">
-													<input type="radio" name="remember-password" id="type-2"> 
-													<label for="type-2">Phone</label>
+													<input type="radio" name="whatsapp" id="type-2"> 
+													<label for="type-2">WhatsApp</label>
 												</div>
 											</div>
 										</div>
 									</div>
 
-									<!-- Form Group -->
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<div class="row clearfix">
-											<!-- Column -->
 											<div class="column col-lg-6 col-md-4 col-sm-12">
 												<div class="radio-box">
 													<input type="radio" name="privacy-accepted" id="type-3"> 
-													<label for="type-3">Aviso de Privacidad</label>
+													<label for="type-3"><a href="aviso-de-privacidad.html" class="text-white" target="_blank">*Acepto Aviso de Privacidad</a></label>
 												</div>
 											</div>
 										</div>
@@ -751,5 +739,7 @@
     <script src="assets/js/cursor-bundle.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/select_estados.js"></script>
+    <script src="assets/js/municipios.js"></script>
 </body>
 </html>

@@ -1067,6 +1067,11 @@ img {
 	color: var(--main-color);
 }
 
+.btn-pagos{
+	margin-left: 140px;
+	width: 200px;
+}
+
 /* Btn Style Six */
 
 .btn-style-six {

@@ -56,3 +56,14 @@
 - Cambio en la imagen del banner en la página Empresarial.
 - Formularios Contratar Planes, Me interesa y Empresarial terminados. NOTA: Hacer pruebas en producción para verificar el correcto funcionamiento.
 - Se cambiaron las 4 imágenes del cuadro en la página Cobertura.
+
+# Modificaciones 10/11/2023
+- Se cambiaron las imágenes de Misión, Visión, bloque informativo y banner en la página Nosotros.
+- Se cambiaron las imágenes del bloque de descripción e íconos (paquetes) en la página Empresarial.
+- Modificación y validación de campos para el formulario de vacantes en la página Nosotros. Pendiente.
+- Modificación y validación de campos para el formulario de Contacto en la página Contáctanos. Pendiente.
+- Se cambió la imagen de la sección Preguntas Frecuentes en la página Contáctanos.
+- Se cambió el logo de KualiDigital.
+- Se cambió la imagen del banner en la página de Inicio.
+- Se agregó el PDF de las formas de pago en la página Planes.
+- Se agregó el PDF con el listado de los canales en la página Streaming.
