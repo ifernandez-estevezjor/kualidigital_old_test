@@ -1,8 +1,11 @@
 const nombre_completoEl = document.querySelector('#nombre_completo');
 const tel_celularEl = document.querySelector('#tel_celular');
-const emailEl = document.querySelector('#email');
-const passwordEl = document.querySelector('#password');
-const confirmPasswordEl = document.querySelector('#confirm-password');
+const tel_otroEl = document.querySelector('#tel_otro');
+const estadoEl = document.querySelector('#estado');
+const municipioEl = document.querySelector('#municipio');
+const colonia_localidadEl = document.querySelector('#colonia_localidad');
+const codigo_postalEl = document.querySelector('#codigo_postal');
+const aviso_privacidadEl = document.querySelector('#aviso_privacidad');
 
 const form = document.querySelector('#signup');
 
@@ -46,65 +49,103 @@ const checktel_celular = () => {
     return valid;
 };
 
+const checktel_otro = () => {
 
-const checkEmail = () => {
     let valid = false;
-    const email = emailEl.value.trim();
-    if (!isRequired(email)) {
-        showError(emailEl, 'Email cannot be blank.');
-    } else if (!isEmailValid(email)) {
-        showError(emailEl, 'Email is not valid.')
+
+    const max = 10;
+
+    const tel_otro = tel_otroEl.value.trim();
+
+    if (!isRequired(tel_otro)) {
+        showError(tel_otroEl, 'Escribe tu Número de Teléfono.');
+    } else if (!isBetween(tel_otro.length, max)) {
+        showError(tel_otroEl, `Tu Número de Teléfono debe tener ${max} caracteres.`)
     } else {
-        showSuccess(emailEl);
+        showSuccess(tel_otroEl);
         valid = true;
     }
     return valid;
 };
 
-const checkPassword = () => {
+const checkestado = () => {
+
     let valid = false;
 
+    const estado = estadoEl.value.trim();
 
-    const password = passwordEl.value.trim();
-
-    if (!isRequired(password)) {
-        showError(passwordEl, 'Password cannot be blank.');
-    } else if (!isPasswordSecure(password)) {
-        showError(passwordEl, 'Password must has at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)');
+    if (!isRequired(estado)) {
+        showError(estadoEl, 'Selecciona un Estado.');
     } else {
-        showSuccess(passwordEl);
+        showSuccess(estadoEl);
         valid = true;
     }
-
     return valid;
 };
 
-const checkConfirmPassword = () => {
-    let valid = false;
-    // check confirm password
-    const confirmPassword = confirmPasswordEl.value.trim();
-    const password = passwordEl.value.trim();
+const checkmunicipio = () => {
 
-    if (!isRequired(confirmPassword)) {
-        showError(confirmPasswordEl, 'Please enter the password again');
-    } else if (password !== confirmPassword) {
-        showError(confirmPasswordEl, 'The password does not match');
+    let valid = false;
+
+    const municipio = municipioEl.value.trim();
+
+    if (!isRequired(municipio)) {
+        showError(municipioEl, 'Selecciona un Municipio.');
     } else {
-        showSuccess(confirmPasswordEl);
+        showSuccess(municipioEl);
         valid = true;
     }
-
     return valid;
 };
 
-const isEmailValid = (email) => {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
+const checkcolonia_localidad = () => {
+
+    let valid = false;
+
+    const colonia_localidad = colonia_localidadEl.value.trim();
+
+    if (!isRequired(colonia_localidad)) {
+        showError(colonia_localidadEl, 'Escribe tu Colonia o Localidad.');
+    } else {
+        showSuccess(colonia_localidadEl);
+        valid = true;
+    }
+    return valid;
 };
 
-const isPasswordSecure = (password) => {
-    const re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
-    return re.test(password);
+
+const checkcodigo_postal = () => {
+
+    let valid = false;
+
+    const max = 5;
+
+    const codigo_postal = codigo_postalEl.value.trim();
+
+    if (!isRequired(codigo_postal)) {
+        showError(codigo_postalEl, 'Escribe tu Nombre Completo.');
+    } else if (!isBetween(codigo_postal.length, max)) {
+        showError(codigo_postalEl, `El Código Postal debe tener ${max} dígitos.`)
+    } else {
+        showSuccess(codigo_postalEl);
+        valid = true;
+    }
+    return valid;
+};
+
+const checkaviso_privacidad = () => {
+
+    let valid = false;
+
+    const aviso_privacidad = aviso_privacidadEl.value.trim();
+
+    if (!isRequired(aviso_privacidad)) {
+        showError(aviso_privacidadEl, 'Acepta el Aviso de Privacidad.');
+    } else {
+        showSuccess(aviso_privacidadEl);
+        valid = true;
+    }
+    return valid;
 };
 
 const isRequired = value => value === '' ? false : true;
@@ -144,15 +185,21 @@ form.addEventListener('submit', function (e) {
     // validate fields
     let isnombre_completoValid = checknombre_completo(),
         istel_celularValid = checktel_celular(),
-        isEmailValid = checkEmail(),
-        isPasswordValid = checkPassword(),
-        isConfirmPasswordValid = checkConfirmPassword();
+        istel_otroValid = checktel_otro(),
+        isestadoValid = checkestado(),
+        ismunicipioValid = checkmunicipio(),
+        iscolonia_localidadValid = checkcolonia_localidad(),
+        iscodigo_postalValid = checkcodigo_postal(),
+        isaviso_privacidadValid = checkaviso_privacidad();
 
     let isFormValid = isnombre_completoValid &&
         istel_celularValid &&
-        isEmailValid &&
-        isPasswordValid &&
-        isConfirmPasswordValid;
+        istel_otroValid &&
+        isestadoValid &&
+        ismunicipioValid &&
+        iscolonia_localidadValid &&
+        iscodigo_postalValid &&
+        isaviso_privacidadValid;
 
     // submit to the server if the form is valid
     if (isFormValid) {
@@ -183,14 +230,23 @@ form.addEventListener('input', debounce(function (e) {
         case 'tel_celular':
             checktel_celular();
             break;
-        case 'email':
-            checkEmail();
+        case 'tel_otro':
+            checktel_otro();
             break;
-        case 'password':
-            checkPassword();
+        case 'estado':
+            checkestado();
             break;
-        case 'confirm-password':
-            checkConfirmPassword();
+        case 'municipio':
+            checkmunicipio();
+            break;
+        case 'colonia_localidad':
+            checkcolonia_localidad();
+            break;
+        case 'codigo_postal':
+            checkcodigo_postal();
+            break;
+        case 'aviso_privacidad':
+            checkaviso_privacidad();
             break;
     }
 }));

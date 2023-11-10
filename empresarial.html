@@ -29,6 +29,7 @@
         <link href="assets/css/odometer.css" rel="stylesheet">
         <link href="assets/css/metisMenu.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
+        <link href="assets/css/validation.css" rel="stylesheet">
     </head>
 <body>
     
@@ -459,51 +460,64 @@
 				<!-- Form Title Box -->
 				<div class="form-title-box">
 					<h3>Me Interesa</h3>
+                    <h4>Déjanos tus datos</h4>
+                    <p class="text-dark">Los campos marcados con (*) son obligatorios.</p>
 				</div>
 				
 				<!-- Contact Form -->
 				<div class="contact-form">
-					<form method="post" action="sendemail.php" id="contact-form">
-						<div class="row clearfix">
-							
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="first_name" placeholder="Nombre(s)" required>
+					<form action="#" id="signup" class="form" method="post" enctype="multipart/form-data">
+                        <div class="row clearfix">
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="nombre_completo" id="nombre_completo" autocomplete="off" placeholder="*Nombre Completo">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="cargo" id="cargo" autocomplete="off" placeholder="*Cargo">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="email" id="email" autocomplete="off" placeholder="*Correo Electrónico">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="empresa" id="empresa" autocomplete="off" placeholder="*Empresa">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="tel_celular" id="tel_celular" autocomplete="off" placeholder="Teléfono Celular">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="tel_numero" id="tel_numero" autocomplete="off" placeholder="*Número Teléfono">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="extension" id="extension" autocomplete="off" placeholder="Extensión">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <select class="form-control" name="estado" id="estado"></select>
+                                <small></small>
 							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="last_name" placeholder="Apellidos" required>
+							<div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <select class="form-control" name="municipio" id="municipio"></select>
+                                <small></small>
 							</div>
-							
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="position" placeholder="Cargo" required>
-							</div>							
-							
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="company" placeholder="Empresa" required>
+							<div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <select class="form-control" name="planes" id="planes">
+                                    <option value="null">Seleccionar Plan</option>
+                                    <option value="pyme">PyME</option>
+                                    <option value="simetrico">Simétrico</option>
+                                    <option value="dedicado">Dedicado</option>
+                                </select>
+                                <small></small>
 							</div>
-
-                            <div class="col-lg-12 col-md-6 col-sm-12 form-group">
-								<input type="email" name="email" placeholder="Email" required>
+                            <div class="col-md-12 col-lg-12 col-sm-12 form-group text-center">
+								<button class="btn-contratar" type="submit" value="Submit" name="submitForm" id="submit"><span class="txt text-white">Enviar</span></button>
 							</div>
-							
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="phone" placeholder="Teléfono" required>
-							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="extension" placeholder="Extensión">
-							</div>
-
-							<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-								<textarea class="darma" name="message" placeholder="Escribe tu mensaje..."></textarea>
-							</div>
-							
-							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-								<button class="theme-btn btn-style-four" type="submit" name="submit-form"><span class="txt">Enviar</span></button>
-							</div>
-							
-						</div>
-					</form>
+                        </div>
+                    </form>
 				</div>
 				
 			</div>
@@ -679,5 +693,8 @@
     <script src="assets/js/cursor-bundle.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/municipios.js"></script>
+    <script src="assets/js/select_estados.js"></script>
+    <script src="assets/js/validation-empresarial.js"></script>
 </body>
 </html>

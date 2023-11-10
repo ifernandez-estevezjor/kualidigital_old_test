@@ -41,12 +41,13 @@
 
 /* 
 
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-family: 'Jost', sans-serif;
 	
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /*** 
 
@@ -484,7 +485,8 @@
 ***/
 
 body {
-	font-family: var(--font-family-poppins);
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	color: var(--dark-color);
 	line-height: 1.6em;
@@ -530,8 +532,8 @@ h6 {
 	background: none;
 	font-weight: 700;
 	color: var(--heading-color);
-	/*font-family: var(--font-family-poppins);*/
-	font-family: 'Poppins', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
 }
 
 input,
@@ -557,7 +559,7 @@ p {
 	line-height: 1.8em;
 	font-size: var(--font-15);
 	/*color: var(--dark-color);*/
-	font-family: var(--font-family-poppins);
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Typography */
@@ -750,7 +752,7 @@ img {
 
 .list-style-two {
 	position: relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .list-style-two li {
@@ -1137,7 +1139,7 @@ img {
 	position: relative;
 	z-index: 1;
 	color: #ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .btn-style-seven:before {
@@ -1428,7 +1430,7 @@ img {
 	text-transform: capitalize;
 	color: var(--white-color);
 	background: var(--main-color-ten);
-	font-family: var(--font-family-Sen);
+	font-family: 'Roboto', sans-serif;
 	background: -webkit-linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
 	background: -moz-linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
 	background: linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
@@ -1501,7 +1503,7 @@ img {
 	font-size: var(--font-16);
 	text-transform: capitalize;
 	color: var(--white-color);
-	font-family: var(--font-family-Sen);
+	font-family: 'Roboto', sans-serif;
 	border: 2px solid var(--white-color);
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
@@ -1558,7 +1560,7 @@ img {
 	font-size: var(--font-16);
 	text-transform: capitalize;
 	color: var(--white-color);
-	font-family: var(--font-family-Sen);
+	font-family: 'Roboto', sans-serif;
 	background-color: var(--dark-color-four);
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
@@ -1614,7 +1616,7 @@ img {
 	font-size: var(--font-16);
 	text-transform: capitalize;
 	color: var(--white-color);
-	font-family: var(--font-family-poppins);
+	font-family: 'Roboto', sans-serif;
 	background: linear-gradient(to right, var(--main-color-twentytwo) 0%, var(--main-color-eighteen) 100%);
 }
 
@@ -1674,7 +1676,7 @@ img {
 	font-size: var(--font-16);
 	text-transform: capitalize;
 	color: var(--white-color);
-	font-family: var(--font-family-poppins);
+	font-family: 'Roboto', sans-serif;
 	background-color: var(--main-color-two);
 }
 
@@ -1734,7 +1736,7 @@ img {
 	font-size: var(--font-16);
 	text-transform: capitalize;
 	color: var(--main-color-two);
-	font-family: var(--font-family-poppins);
+	font-family: 'Roboto', sans-serif;
 	background-color: var(--white-color);
 }
 
@@ -1854,11 +1856,12 @@ img {
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: var(--margin-bottom-15);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .sec-title .text {
-	margin-top: var(--margin-top-15);
+	margin-top: var(--margin-top-50);
+	font-size: 20px;
 }
 
 .sec-title.light .text,
@@ -1975,7 +1978,7 @@ img {
 	font-size: var(--font-20);
 	color: var(--main-color-six);
 	margin-bottom: var(--margin-bottom-25);
-	font-family: var(--font-family-Sen);
+	font-family: 'Roboto', sans-serif;
 }
 
 .sec-title-three .title:before {
@@ -2003,7 +2006,7 @@ img {
 
 .sec-title-three h2 {
 	color: var(--dark-color-four);
-	font-family: var(--font-family-Sen);
+	font-family: 'Roboto', sans-serif;
 }
 
 .sec-title-three .text {
@@ -2055,19 +2058,19 @@ img {
 	font-size: var(--font-18);
 	text-transform: uppercase;
 	color: var(--main-color-nineteen);
-	font-family: var(--font-family-poppins);
+	font-family: 'Roboto', sans-serif;
 }
 
 .sec-title-four h2 {
 	color: var(--main-color-two);
 	margin-top: var(--margin-top-10);
-	font-family: var(--font-family-poppins);
+	font-family: 'Roboto', sans-serif;
 }
 
 .sec-title-four .text {
 	color: #666666;
 	margin-top: var(--margin-top-5);
-	font-family: var(--font-family-poppins);
+	font-family: 'Roboto', sans-serif;
 }
 
 .sec-title-four.light .title,

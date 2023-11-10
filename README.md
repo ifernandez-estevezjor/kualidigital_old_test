@@ -47,3 +47,12 @@
 - Validación de campos mediante javascript (pendiente).
 - Cambio de imágenes para productos en el home (VectorMax quedó pequeña).
 - Creación del archivo que envía los datos del formulario para los paquetes (pendiente).
+
+# Modificaciones 09/11/2023
+- Cambio en la imagen del banner Streaming en la página Home.
+- Cambio en la imagen del banner Nuestros Planes y faq en la página Planes.
+- Cambio en la imagen del banner cobertura y mapa en la página Cobertura.
+- Corrección del tamaño de las imágenes de los productos en Home.
+- Cambio en la imagen del banner en la página Empresarial.
+- Formularios Contratar Planes, Me interesa y Empresarial terminados. NOTA: Hacer pruebas en producción para verificar el correcto funcionamiento.
+- Se cambiaron las 4 imágenes del cuadro en la página Cobertura.

@@ -31,7 +31,9 @@
     17. faq
 
 -----------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap");*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 @-webkit-keyframes zoom {
     0% {
@@ -159,7 +161,8 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    /*font-family: "Roboto", sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 0;
@@ -296,7 +299,7 @@ span {
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
     .sec-title .title {
         font-size: 42px;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
 }
 
@@ -2143,7 +2146,7 @@ h3 {
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h5 {

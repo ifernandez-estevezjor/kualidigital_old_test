@@ -267,108 +267,50 @@
 				
 				<!-- Contact Form -->
 				<div class="contact-form">
-                    <form action="contacto-planes.php" id="signup" class="form" method="post" enctype="multipart/form-data">
+                    <form action="#" id="signup" class="form" method="post" enctype="multipart/form-data">
                         <div class="row clearfix">
-                            <div class="form-field col-md-12">
+                            <div class="form-field col-md-4 col-lg-12 col-sm-12">
                                 <input class="form-control" type="text" name="nombre_completo" id="nombre_completo" autocomplete="off" placeholder="Nombre Completo">
                                 <small></small>
                             </div>
-                            <div class="form-field col-md-4">
-                                <input class="form-control" type="text" name="50megasClasico" id="50megasClasico" autocomplete="off" value="50megasClasico" disabled required>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="text" name="planes" id="planes" autocomplete="off" value="50megasClasico" disabled required>
                                 <small></small>
                             </div>
-                            <div class="form-field col-md-4">
-                                <input class="form-control" type="text" name="tel_celular" id="tel_celular" autocomplete="off" placeholder="Teléfono Celular">
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="tel_celular" id="tel_celular" autocomplete="off" placeholder="Teléfono Celular">
                                 <small></small>
                             </div>
-                            <div class="form-field col-md-4">
-                                <input class="form-control" type="text" name="tel_otro" id="tel_otro" autocomplete="off" placeholder="Teléfono Otro">
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="tel_otro" id="tel_otro" autocomplete="off" placeholder="Teléfono Otro">
                                 <small></small>
                             </div>
-                            <div class="form-field">
-                                <input type="submit" name="submitForm" value="Enviar" class="btn">
-                            </div>
-                        </div>
-                        </form>
-                    </form>
-                    <!-- <form name="f1" action="contacto-index.php" onsubmit="return validate()" method="post" enctype="multipart/form-data">
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" name="name" class="form-control border-top-0 border-start-0 border-end-0" placeholder="Nombre">
-                                <span id="nameinput" style="color:red"></span>
-                            </div>
-                            <div class="col">
-                                <input type="text" name="mobile" class="form-control border-top-0 border-start-0 border-end-0" placeholder="Teléfono">
-                                <span id="mobileinput" style="color:red"></span>
-                                
-                                <input type="text" name="zipcode" class="form-control border-top-0 border-start-0 border-end-0 my-3" placeholder="Código Postal">
-                                <span id="zipcodeinput" style="color:red"></span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col text-end">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Aceptar <a href="./assets/docs/Aviso_Privacidad.pdf" class="text-decoration-none">Aviso de Privacidad</a>.</label>
-                            </div>
-                            <input type="text" name="subject" value="Mensaje del Cliente" hidden>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-md-6 mt-3">
-                                <div class="g-recaptcha" data-sitekey="6LcLyLQnAAAAAHa0UaVR-AvtS6j16s_K7_uU4d1o" data-callback="correctCaptcha"></div>
-                            </div>
-                        </div>
-                        <div class="row text-center my-3">
-                            <div class="col-12">
-                                <button type="submit" value="Submit" name="submitForm" class="btn btn-primary rounded-pill">Quiero que me llamen</button>
-                            </div>
-                        </div>
-                    </form> -->
-					<!-- <form method="post" action="contacto-planes.php" name="f1" id="contact_form" onsubmit="return validate()" enctype="multipart/form-data">
-						<div class="row clearfix">
-							
-							<div class="col-lg-12 col-md-6 col-sm-12 form-group input-control">
-								<input type="text" name="nombre_completo" placeholder="*Nombre Completo">
-                                <span id="nombre_completoinput" style="color:red"></span>
-							</div>
-
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="planes" value="50megasClasico" placeholder="50 Megas - CLÁSICO" disabled required>
-							</div>
-							
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="tel" name="tel_uno" placeholder="*Teléfono Celular" required>
-							</div>
-
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="tel" name="tel_dos" placeholder="Otro No. de Teléfono" required>
-							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
                                 <select class="form-control" name="estado" id="estado"></select>
+                                <small></small>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+							<div class="form-field col-md-4 col-lg-6 col-sm-12">
                                 <select class="form-control" name="municipio" id="municipio"></select>
+                                <small></small>
 							</div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="colonia_localidad" placeholder="*Colonia o Localidad">
-							</div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="codigo_postal" placeholder="Código Postal">
-							</div>
-							
-							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" name="aviso_privacidad" id="aviso_privacidad" required>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="colonia_localidad" id="colonia_localidad" autocomplete="off" placeholder="Colonia o Localidad">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="codigo_postal" id="codigo_postal" autocomplete="off" placeholder="Código Postal">
+                                <small></small>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mb-3 text-center custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" name="aviso_privacidad" id="aviso_privacidad">
                                 <label class="custom-control-label" for="customCheck1"><a href="aviso-de-privacidad.html" class="text-secondary">*Acepto Aviso de Privacidad</a></label>
+                                <small></small>
 							</div>
-                            
-							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-								<button class="theme-btn btn-style-four" type="submit" value="Submit" name="submitForm"><span class="txt text-white">Enviar</span></button>
+                            <div class="col-md-12 col-lg-12 col-sm-12 form-group text-center">
+								<button class="btn-contratar" type="submit" value="Submit" name="submitForm" id="submit"><span class="txt text-white">Enviar</span></button>
 							</div>
-							
-						</div>
-					</form> -->
+                        </div>
+                    </form>
 				</div>
 				
 			</div>
