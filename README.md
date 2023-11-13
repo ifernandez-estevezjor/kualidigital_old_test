@@ -67,3 +67,12 @@
 - Se cambió la imagen del banner en la página de Inicio.
 - Se agregó el PDF de las formas de pago en la página Planes.
 - Se agregó el PDF con el listado de los canales en la página Streaming.
+
+# Modificaciones 13/11/2023
+- Se agregaron los enlaces a redes sociales en el footer de todas las páginas.
+- Se agregó logo para el menú de navegación sticky al hacer scrolldown en la página.
+- Se agregó dropdown a la pestaña Contáctanos en el menú de navegación.
+- Creación de anclas para la pestaña Contáctanos.
+- Se corrigió el color del texto para el hover del menú de navegación.
+- Modificación y validación de campos para el formulario de vacantes en la página Nosotros. Pendiente.
+- Modificación y validación de campos para el formulario de Contacto en la página Contáctanos. Pendiente.

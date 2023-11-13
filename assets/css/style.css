@@ -614,6 +614,10 @@
 	opacity:1;
 }
 
+.image-block{
+	margin-top: 120px;
+}
+
 .services-section .lower-section{
 	position:relative;
 	padding-top:var(--padding-top-90);
@@ -5149,7 +5153,7 @@
 
 .contact-page-section{
 	position:relative;
-	padding:0px 0px 110px;
+	padding:0px 0px 50px;
 }
 
 .contact-page-section .info-column{
