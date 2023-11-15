@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // Cargamos los estados
+
     var estados = "<option value='' disabled selected>*Estado</option>";
 
     for (var key in municipios) {
@@ -10,7 +10,6 @@ $(document).ready(function(){
 
     $('#estado').html(estados);
 
-    // Al detectar
     $( "#estado" ).change(function() {
         var html = "<option value='' disabled selected>*Municipio</option>";
         $( "#estado option:selected" ).each(function() {
@@ -22,7 +21,7 @@ $(document).ready(function(){
             }
         });
         $('#municipio').html(html);
-        $('select').material_select('update');
+        $('select').select('update');
     })
     .trigger( "change" );
 });

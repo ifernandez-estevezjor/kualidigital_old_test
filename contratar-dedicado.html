@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>KualiDigital - Servicio Premier 200 Megas</title>
+        <title>KualiDigital - Contratar Dedicado</title>
         <link rel="shortcut icon" type="image/x-icon" href="assets/images/general/favicon.ico">
 
         <link href="assets/css/animate.css" rel="stylesheet">
@@ -29,6 +29,7 @@
         <link href="assets/css/odometer.css" rel="stylesheet">
         <link href="assets/css/metisMenu.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
+        <link href="assets/css/validation.css" rel="stylesheet">
     </head>
 <body>
     
@@ -55,19 +56,26 @@
                 <div class="header__logo">
                     <a href="index.html">
                         <img src="assets/images/general/logo-kuali.png" alt="">
-                        <img src="assets/img/logo/logo_dark.png" alt="">
+                        <img src="assets/images/general/logo-kuali-sticky.png" alt="">
                     </a>
                 </div>
                 <div class="main_menu_wrap navbar navbar-expand-lg">
-                    <nav class="main_menu_section collapse navbar-collapse">
+                    <nav class="main_menu_index collapse navbar-collapse">
                         <ul class="main_menu_list ul_li">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="planes.html">Planes</a></li>
                             <li><a href="streaming.html">Streaming</a></li>
                             <li><a href="cobertura.html">Cobertura</a></li>
                             <li><a href="nosotros.html">Nosotros</a></li>
-                            <li class="active"><a href="contactanos.html">Contáctanos</a></li>
-                            <li><a href="empresarial.html">Empresarial</a></li>
+                            <li class="dropdown">
+                                <a class="nav-link" href="#!">Contáctanos <i class="fa fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="index.html">Sucursales</a></li>
+                                    <li><a href="index-2.html">Solicitar Información</a></li>
+                                    <li><a href="index-3.html">Preguntas Frecuentes</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="empresarial.html">Empresarial</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -240,22 +248,16 @@
     <main>
 
     <!-- Page Title -->
-    <section class="page-title" style="background-image: url(assets/images/contactanos/10.jpg);margin-top: 96px;">
+    <section class="page-title" style="background-image: url(assets/images/empresarial/10.jpg);margin-top: 96px;">
         <div class="auto-container">
-            <h2>Servicio Premier 200 Megas</h2>
+            <h2>Contratar Dedicado</h2>
             <ul class="bread-crumb clearfix">
                 <li><a href="index.html">Home</a></li>
-                <li>Servicio Premier 200 Megas</li>
+                <li>Contratar Dedicado</li>
             </ul>
         </div>
     </section>
     <!-- End Page Title -->
-
-    <?php
-        $usuario = 'root';
-        $password = '#Admin01#';
-        $db = new PDO('mysql:host=localhost;dbname=estados_mexico', $usuario, $password);
-    ?>
 
     <!-- Contact Page Section -->
     <section class="contact-page-section">
@@ -265,61 +267,60 @@
 			<div class="contact-form-box">
 				<!-- Form Title Box -->
 				<div class="form-title-box">
-					<h3>Generación Clásico 50 Megas</h3>
+					<h3>Me Interesa Dedicado</h3>
                     <h4>Déjanos tus datos</h4>
+                    <p class="text-dark">Los campos marcados con (*) son obligatorios.</p>
 				</div>
 				
 				<!-- Contact Form -->
 				<div class="contact-form">
-					<form method="post" action="sendemail.php" id="contact-form">
-						<div class="row clearfix">
-							
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="name" placeholder="Nombre(s)" required>
+					<form action="#" id="signup" class="form" method="post" enctype="multipart/form-data">
+                        <div class="row clearfix">
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="nombre_completo" id="nombre_completo" autocomplete="off" placeholder="*Nombre Completo">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="cargo" id="cargo" autocomplete="off" placeholder="*Cargo">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="email" id="email" autocomplete="off" placeholder="*Correo Electrónico">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="empresa" id="empresa" autocomplete="off" placeholder="*Empresa">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="tel_celular" id="tel_celular" autocomplete="off" placeholder="Teléfono Celular">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="tel_numero" id="tel_numero" autocomplete="off" placeholder="*Número Teléfono">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="extension" id="extension" autocomplete="off" placeholder="Extensión">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <select class="form-control" name="estado" id="estado"></select>
+                                <small></small>
 							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="last_name" placeholder="Apellidos" required>
+							<div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <select class="form-control" name="municipio" id="municipio"></select>
+                                <small></small>
 							</div>
-							
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="email" name="email" placeholder="Email" required>
+							<div class="form-field col-md-4 col-lg-4 col-sm-12" id="planes">
+                                <input class="form-control" type="text" name="planes" id="planes" autocomplete="off" value="plan_dedicado" disabled>
+                                <small></small>
+                            </div>
+                            <div class="col-md-12 col-lg-12 col-sm-12 form-group text-center">
+								<button class="btn-contratar" type="submit" value="Submit" name="submitForm" id="submit"><span class="txt text-white">Enviar</span></button>
 							</div>
-							
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="phone" placeholder="Teléfono" required>
-							</div>
-
-							<div class="col-lg-12 col-md-6 col-sm-12 form-group">
-                            <select class="form-control" >
-                                <option value="">Seleccione:</option>
-                                <?php
-                                $query = $db->prepare("SELECT * FROM estados");
-                                $query->execute();
-                                $data = $query->fetchAll();
-                                
-                                foreach ($data as $valores):
-                                echo '<option value="'.$valores["id"].'">'.$valores["estados"].'</option>';
-                                endforeach;
-                                ?>
-                                </select>
-							</div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="hidden" name="50m" required>
-							</div>
-							
-							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1"><a href="#" class="text-secondary">Aviso de Privacidad</a></label>
-							</div>
-                            
-							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-								<button class="theme-btn btn-style-four" type="submit" name="submit-form"><span class="txt text-white">Enviar</span></button>
-							</div>
-							
-						</div>
-					</form>
+                        </div>
+                    </form>
 				</div>
 				
 			</div>
@@ -452,15 +453,15 @@
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-12 mt-20">
                             <div class="social-links text-center text-md-center">
-                                <a href="#!">
+                                <a href="https://www.facebook.com/kualidigital" target="_blank" rel="noopener noreferrer" aria-label="Facebook KualiDigital">
                                     <i class="fa fa-facebook-f"></i>
                                     <i class="fa fa-facebook-f"></i>
                                 </a>
-                                <a href="#!">
+                                <a href="https://www.instagram.com/kuali.digital/" target="_blank" rel="noopener noreferrer" aria-label="Instagram KualiDigital">
                                     <i class="fa fa-instagram"></i>
                                     <i class="fa fa-instagram"></i>
                                 </a>
-                                <a href="#!">
+                                <a href="https://wa.me/525578784652?text=Me%20gustaría%20saber%20mas%informacion%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp KualiDigital">
                                     <i class="fa fa-whatsapp"></i>
                                     <i class="fa fa-whatsapp"></i>
                                 </a>
@@ -495,5 +496,8 @@
     <script src="assets/js/cursor-bundle.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/municipios.js"></script>
+    <script src="assets/js/select_estados.js"></script>
+    <script src="assets/js/validation-empresarial.js"></script>
 </body>
 </html>

@@ -3571,7 +3571,8 @@ h6 {
     background-color: #ffffff;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../img/icon/preloader.svg);
+    /*background-image: url(../img/icon/preloader.svg);*/
+    background-image: url(../images/general/loading.gif);
     background-size: 110px;
 }
 
@@ -3973,6 +3974,7 @@ h6 {
 
 .img-logo-kuali{
     max-width: 50%;
+    margin-top: -100px;
 }
 
 .client-benifit {
@@ -7350,4 +7352,32 @@ h6 {
 
 .text-politics{
     font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .products-box{
+        margin-left: 0px;
+    }
+    .footer__logo{
+        width: 200px;
+        margin-left: 50px;
+    }
+    .social-links{
+        margin-right: 40px;
+    }
+    .img-faq-home{
+        height: auto;
+        margin-left: -30px;
+    }
+    .thm-btn{
+        margin-right: 50px;
+    }
+    .img-network-3{
+        width: 250px;
+        height: 200px;
+    }
+    .contact-page-section .info-column .lower-box {
+        position: relative;
+        padding: 40px 20px 30px;
+    }
 }

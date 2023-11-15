@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>KualiDigital - Generación Clásico 50 Megas</title>
+        <title>KualiDigital - Contratar Simétrico</title>
         <link rel="shortcut icon" type="image/x-icon" href="assets/images/general/favicon.ico">
 
         <link href="assets/css/animate.css" rel="stylesheet">
@@ -29,10 +29,7 @@
         <link href="assets/css/odometer.css" rel="stylesheet">
         <link href="assets/css/metisMenu.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
-
-        <style>
-            .error {color: #FF0000;}
-        </style>
+        <link href="assets/css/validation.css" rel="stylesheet">
     </head>
 <body>
     
@@ -59,19 +56,26 @@
                 <div class="header__logo">
                     <a href="index.html">
                         <img src="assets/images/general/logo-kuali.png" alt="">
-                        <img src="assets/img/logo/logo_dark.png" alt="">
+                        <img src="assets/images/general/logo-kuali-sticky.png" alt="">
                     </a>
                 </div>
                 <div class="main_menu_wrap navbar navbar-expand-lg">
-                    <nav class="main_menu_section collapse navbar-collapse">
+                    <nav class="main_menu_index collapse navbar-collapse">
                         <ul class="main_menu_list ul_li">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="planes.html">Planes</a></li>
                             <li><a href="streaming.html">Streaming</a></li>
                             <li><a href="cobertura.html">Cobertura</a></li>
                             <li><a href="nosotros.html">Nosotros</a></li>
-                            <li class="active"><a href="contactanos.html">Contáctanos</a></li>
-                            <li><a href="empresarial.html">Empresarial</a></li>
+                            <li class="dropdown">
+                                <a class="nav-link" href="#!">Contáctanos <i class="fa fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="index.html">Sucursales</a></li>
+                                    <li><a href="index-2.html">Solicitar Información</a></li>
+                                    <li><a href="index-3.html">Preguntas Frecuentes</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="empresarial.html">Empresarial</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -244,73 +248,16 @@
     <main>
 
     <!-- Page Title -->
-    <section class="page-title" style="background-image: url(assets/images/contactanos/10.jpg);margin-top: 96px;">
+    <section class="page-title" style="background-image: url(assets/images/empresarial/10.jpg);margin-top: 96px;">
         <div class="auto-container">
-            <h2>Generación Clásico 50 Megas</h2>
+            <h2>Contratar Simétrico</h2>
             <ul class="bread-crumb clearfix">
                 <li><a href="index.html">Home</a></li>
-                <li>Generación Clásico 50 Megas</li>
+                <li>Contratar Simétrico</li>
             </ul>
         </div>
     </section>
     <!-- End Page Title -->
-
-    <?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-    
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
 
     <!-- Contact Page Section -->
     <section class="contact-page-section">
@@ -320,79 +267,60 @@ function test_input($data) {
 			<div class="contact-form-box">
 				<!-- Form Title Box -->
 				<div class="form-title-box">
-					<h3>Generación Clásico 50 Megas</h3>
+					<h3>Me Interesa Simétrico</h3>
                     <h4>Déjanos tus datos</h4>
                     <p class="text-dark">Los campos marcados con (*) son obligatorios.</p>
 				</div>
 				
 				<!-- Contact Form -->
 				<div class="contact-form">
-                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  <br><br>
-  Website: <input type="text" name="website" value="<?php echo $website;?>">
-  <span class="error"><?php echo $websiteErr;?></span>
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
-  <span class="error">* <?php echo $genderErr;?></span>
-  <br><br>
-  <input type="submit" name="submitForm" value="Submit">  
-</form>
-					<!-- <form method="post" action="sendmessage.php" class="contact_form" id="contact_form">
-						<div class="row clearfix">
-							
-                            <div class="col-lg-12 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="name" placeholder="*Nombre Completo">
-                                <span class="error">* <?php echo $nameErr; ?> </span>
+					<form action="#" id="signup" class="form" method="post" enctype="multipart/form-data">
+                        <div class="row clearfix">
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="nombre_completo" id="nombre_completo" autocomplete="off" placeholder="*Nombre Completo">
+                                <small></small>
                             </div>
-
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="plan" value="50megasClasico" placeholder="50 Megas - CLÁSICO" disabled required>
-							</div>
-							
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="tel_celular" placeholder="*Teléfono Celular" required>
-							</div>
-
-							<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-								<input type="text" name="tel_otro" placeholder="Otro No. de Teléfono" required>
-							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="cargo" id="cargo" autocomplete="off" placeholder="*Cargo">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="email" id="email" autocomplete="off" placeholder="*Correo Electrónico">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-6 col-sm-12">
+                                <input class="form-control" type="text" name="empresa" id="empresa" autocomplete="off" placeholder="*Empresa">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="tel_celular" id="tel_celular" autocomplete="off" placeholder="Teléfono Celular">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="tel_numero" id="tel_numero" autocomplete="off" placeholder="*Número Teléfono">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
+                                <input class="form-control" type="tel" name="extension" id="extension" autocomplete="off" placeholder="Extensión">
+                                <small></small>
+                            </div>
+                            <div class="form-field col-md-4 col-lg-4 col-sm-12">
                                 <select class="form-control" name="estado" id="estado"></select>
+                                <small></small>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+							<div class="form-field col-md-4 col-lg-4 col-sm-12">
                                 <select class="form-control" name="municipio" id="municipio"></select>
+                                <small></small>
 							</div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="colonia_localidad" placeholder="*Colonia o Localidad">
+							<div class="form-field col-md-4 col-lg-4 col-sm-12" id="planes">
+                                <input class="form-control" type="text" name="planes" id="planes" autocomplete="off" value="plan_simetrico" disabled>
+                                <small></small>
+                            </div>
+                            <div class="col-md-12 col-lg-12 col-sm-12 form-group text-center">
+								<button class="btn-contratar" type="submit" value="Submit" name="submitForm" id="submit"><span class="txt text-white">Enviar</span></button>
 							</div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-								<input type="text" name="codigo_postal" placeholder="Código Postal">
-							</div>
-							
-							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" name="aviso_privacidad" id="customCheck1" required>
-                                <label class="custom-control-label" for="customCheck1"><a href="aviso-de-privacidad.html" class="text-secondary">*Acepto Aviso de Privacidad</a></label>
-							</div>
-                            
-							<div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-								<button class="theme-btn btn-style-four" type="submit"><span class="txt text-white">Enviar</span></button>
-							</div>
-							
-						</div>
-					</form> -->
+                        </div>
+                    </form>
 				</div>
 				
 			</div>
@@ -525,15 +453,15 @@ function test_input($data) {
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-12 mt-20">
                             <div class="social-links text-center text-md-center">
-                                <a href="#!">
+                                <a href="https://www.facebook.com/kualidigital" target="_blank" rel="noopener noreferrer" aria-label="Facebook KualiDigital">
                                     <i class="fa fa-facebook-f"></i>
                                     <i class="fa fa-facebook-f"></i>
                                 </a>
-                                <a href="#!">
+                                <a href="https://www.instagram.com/kuali.digital/" target="_blank" rel="noopener noreferrer" aria-label="Instagram KualiDigital">
                                     <i class="fa fa-instagram"></i>
                                     <i class="fa fa-instagram"></i>
                                 </a>
-                                <a href="#!">
+                                <a href="https://wa.me/525578784652?text=Me%20gustaría%20saber%20mas%informacion%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp KualiDigital">
                                     <i class="fa fa-whatsapp"></i>
                                     <i class="fa fa-whatsapp"></i>
                                 </a>
@@ -570,5 +498,6 @@ function test_input($data) {
     <script src="assets/js/script.js"></script>
     <script src="assets/js/municipios.js"></script>
     <script src="assets/js/select_estados.js"></script>
+    <script src="assets/js/validation-empresarial.js"></script>
 </body>
 </html>

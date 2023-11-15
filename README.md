@@ -76,3 +76,15 @@
 - Se corrigió el color del texto para el hover del menú de navegación.
 - Modificación y validación de campos para el formulario de vacantes en la página Nosotros. Pendiente.
 - Modificación y validación de campos para el formulario de Contacto en la página Contáctanos. Pendiente.
+
+# Modificaciones 14/11/2023
+- Corrección en el diseño de la barra de navegación página Empresarial.
+- Se modificaron los textos en la sección de planes página Empresarial.
+- Creación de formularios de contacto Pyme, simétrico y dedicado en la página Empresarial.
+- Creación de la validación para formularios de contacto Pyme, simetrico y dedicado en la página Empresarial.
+- Se cambiaron los íconos de la sección Planes en la página Empresarial.
+- Ajuste de visualización para el logo del banner en la página Home.
+- Redireccionamiento a formularios de contacto en la sección planes de la página Planes.
+- Ajuste de visualización en la barra de navegación para las páginas de los formularios de contacto.
+- Ajuste visual para la barra de navegación en todas las páginas de la plantilla.
+- Revisión y modificaciones al diseño responsivo.

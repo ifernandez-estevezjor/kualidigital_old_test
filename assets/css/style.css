@@ -1069,6 +1069,7 @@
 }
 
 .price-block-four .inner-box .price{
+	text-align: center;
 	position:relative;
 	font-weight:700;
 	line-height:1em;

@@ -5,20 +5,13 @@ const empresaEl = document.querySelector('#empresa');
 const tel_numeroEl = document.querySelector('#tel_numero');
 const estadoEl = document.querySelector('#estado');
 const municipioEl = document.querySelector('#municipio');
-const colonia_localidadEl = document.querySelector('#colonia_localidad');
-const codigo_postalEl = document.querySelector('#codigo_postal');
-const aviso_privacidadEl = document.querySelector('#aviso_privacidad');
 
 const form = document.querySelector('#signup');
 
 
 const checknombre_completo = () => {
-
     let valid = false;
-
-    const min = 3,
-        max = 100;
-
+    const min = 3, max = 100;
     const nombre_completo = nombre_completoEl.value.trim();
 
     if (!isRequired(nombre_completo)) {
@@ -33,9 +26,7 @@ const checknombre_completo = () => {
 };
 
 const checkcargo = () => {
-
     let valid = false;
-
     const cargo = cargoEl.value.trim();
 
     if (!isRequired(cargo)) {
@@ -50,10 +41,11 @@ const checkcargo = () => {
 const checkEmail = () => {
     let valid = false;
     const email = emailEl.value.trim();
+    
     if (!isRequired(email)) {
-        showError(emailEl, 'Email cannot be blank.');
+        showError(emailEl, 'Escribe tu Correo Electrónico.');
     } else if (!isEmailValid(email)) {
-        showError(emailEl, 'Email is not valid.')
+        showError(emailEl, 'El correo no tiene un formato válido.')
     } else {
         showSuccess(emailEl);
         valid = true;
@@ -62,9 +54,7 @@ const checkEmail = () => {
 };
 
 const checkempresa = () => {
-
     let valid = false;
-
     const empresa = empresaEl.value.trim();
 
     if (!isRequired(empresa)) {
@@ -77,11 +67,8 @@ const checkempresa = () => {
 };
 
 const checktel_numero = () => {
-
     let valid = false;
-
     const max = 10;
-
     const tel_numero = tel_numeroEl.value.trim();
 
     if (!isRequired(tel_numero)) {
@@ -96,9 +83,7 @@ const checktel_numero = () => {
 };
 
 const checkestado = () => {
-
     let valid = false;
-
     const estado = estadoEl.value.trim();
 
     if (!isRequired(estado)) {
@@ -111,65 +96,13 @@ const checkestado = () => {
 };
 
 const checkmunicipio = () => {
-
     let valid = false;
-
     const municipio = municipioEl.value.trim();
 
     if (!isRequired(municipio)) {
         showError(municipioEl, 'Selecciona un Municipio.');
     } else {
         showSuccess(municipioEl);
-        valid = true;
-    }
-    return valid;
-};
-
-const checkcolonia_localidad = () => {
-
-    let valid = false;
-
-    const colonia_localidad = colonia_localidadEl.value.trim();
-
-    if (!isRequired(colonia_localidad)) {
-        showError(colonia_localidadEl, 'Escribe tu Colonia o Localidad.');
-    } else {
-        showSuccess(colonia_localidadEl);
-        valid = true;
-    }
-    return valid;
-};
-
-
-const checkcodigo_postal = () => {
-
-    let valid = false;
-
-    const max = 5;
-
-    const codigo_postal = codigo_postalEl.value.trim();
-
-    if (!isRequired(codigo_postal)) {
-        showError(codigo_postalEl, 'Escribe tu Nombre Completo.');
-    } else if (!isBetween(codigo_postal.length, max)) {
-        showError(codigo_postalEl, `El Código Postal debe tener ${max} dígitos.`)
-    } else {
-        showSuccess(codigo_postalEl);
-        valid = true;
-    }
-    return valid;
-};
-
-const checkaviso_privacidad = () => {
-
-    let valid = false;
-
-    const aviso_privacidad = aviso_privacidadEl.value.trim();
-
-    if (!isRequired(aviso_privacidad)) {
-        showError(aviso_privacidadEl, 'Acepta el Aviso de Privacidad.');
-    } else {
-        showSuccess(aviso_privacidadEl);
         valid = true;
     }
     return valid;
@@ -221,10 +154,7 @@ form.addEventListener('submit', function (e) {
         isempresaValid = checkempresa(),
         istel_numeroValid = checktel_numero(),
         isestadoValid = checkestado(),
-        ismunicipioValid = checkmunicipio(),
-        iscolonia_localidadValid = checkcolonia_localidad(),
-        iscodigo_postalValid = checkcodigo_postal(),
-        isaviso_privacidadValid = checkaviso_privacidad();
+        ismunicipioValid = checkmunicipio();
 
     let isFormValid = isnombre_completoValid &&
         iscargoValid &&
@@ -232,10 +162,7 @@ form.addEventListener('submit', function (e) {
         isempresaValid &&
         istel_numeroValid &&
         isestadoValid &&
-        ismunicipioValid &&
-        iscolonia_localidadValid &&
-        iscodigo_postalValid &&
-        isaviso_privacidadValid;
+        ismunicipioValid;
 
     // submit to the server if the form is valid
     if (isFormValid) {
@@ -272,26 +199,14 @@ form.addEventListener('input', debounce(function (e) {
         case 'empresa':
             checkempresa();
             break;
-        case 'tel_celular':
-            checktel_celular();
-            break;
-        case 'tel_otro':
-            checktel_otro();
+        case 'tel_numero':
+            checktel_numero();
             break;
         case 'estado':
             checkestado();
             break;
         case 'municipio':
             checkmunicipio();
-            break;
-        case 'colonia_localidad':
-            checkcolonia_localidad();
-            break;
-        case 'codigo_postal':
-            checkcodigo_postal();
-            break;
-        case 'aviso_privacidad':
-            checkaviso_privacidad();
             break;
     }
 }));
