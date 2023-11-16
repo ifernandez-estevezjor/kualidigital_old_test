@@ -74,8 +74,8 @@
 - Se agregó dropdown a la pestaña Contáctanos en el menú de navegación.
 - Creación de anclas para la pestaña Contáctanos.
 - Se corrigió el color del texto para el hover del menú de navegación.
-- Modificación y validación de campos para el formulario de vacantes en la página Nosotros. Pendiente.
-- Modificación y validación de campos para el formulario de Contacto en la página Contáctanos. Pendiente.
+- Modificación y validación de campos para el formulario de vacantes en la página Nosotros. PENDIENTE.
+- Modificación y validación de campos para el formulario de Contacto en la página Contáctanos. PENDIENTE.
 
 # Modificaciones 14/11/2023
 - Corrección en el diseño de la barra de navegación página Empresarial.
@@ -88,3 +88,12 @@
 - Ajuste de visualización en la barra de navegación para las páginas de los formularios de contacto.
 - Ajuste visual para la barra de navegación en todas las páginas de la plantilla.
 - Revisión y modificaciones al diseño responsivo.
+
+# Modificaciones 15/11/2023
+- Revisión y modificaciones al diseño responsivo. PENDIENTE
+- Corrección de la barra de navegación en el diseño responsivo.
+- Corrección de enlaces para las políticas en el footer.
+- Se creó nuevo acordeón en las páginas Planes y Contáctanos.
+- Integración de secciones en el diseño de la página Planes. NOTA: Agregaron bloques de diferentes plantillas. PENDIENTE
+- Continuación del diseño de las secciones en la página Streaming, el carrusel de logos sigue pendiente.
+- Integración carrusel Clientes en la página Contáctanos. PENDIENTE.

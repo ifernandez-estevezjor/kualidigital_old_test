@@ -95,8 +95,11 @@
 	cursor: pointer;
 	position: relative;
 	margin: 2px 0 0 0;
-	padding: .5em .5em .5em .7em;
-	font-size: 100%;
+	padding: .8em .5em .8em .7em;
+	font-size: 22px;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-family: 'Roboto', sans-serif;
 }
 .ui-accordion .ui-accordion-content {
 	padding: 1em 2.2em;

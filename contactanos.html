@@ -29,6 +29,16 @@
         <link href="assets/css/odometer.css" rel="stylesheet">
         <link href="assets/css/metisMenu.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
+
+        <!-- Accordion script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            $( function() {
+                $( "#accordion" ).accordion();
+            } );
+        </script>
+        <!-- End Accordion script -->
     </head>
 <body>
     
@@ -49,7 +59,7 @@
     <!-- scrollToTop end -->
     
     <!-- header start -->
-    <header id="sticky-header" class="header__area header__transparent header__style-2">
+    <header id="sticky-header" class="header__area header__transparent header__style-100">
         <div class="container">
             <div class="header__main-wrap d-flex align-items-center">
                 <div class="header__logo">
@@ -458,91 +468,72 @@
 	<!-- End Default Section -->
 
     <!-- Faq Section -->
-	<section class="faq-section" style="background-image: url(images/background/4.jpg)" id="faq">
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				<!-- Accordion Column -->
-				<div class="accordion-column col-lg-5 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<div class="sec-title">
-							<div class="separator"></div>
-							<h3>Preguntas Frecuentes</h3>
-						</div>
-						
-						<!-- Accordian Box -->
-						<ul class="accordion-box">
+    <section class="faq-section" style="background-image: url(assets/images/planes/4.jpg)">
+        <div class="auto-container">
+            <div class="row clearfix">
+                
+                <!-- Accordion Column -->
+                <div class="accordion-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="sec-title">
+                        <div class="separator"></div>
+                        <h3>Preguntas Frecuentes</h3>
+                    </div>
+                    <div class="inner-column">
 
-							<!--Block-->
-							<li class="accordion block">
-								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>¿Qué costo tiene la instalación?</div>
-								<div class="acc-content">
-									<div class="content">
-										<div class="text text-dark">Ninguno, con nosotros no tienes cobros extra.  El día que te instalemos pagar tu primer mensualidad acorde a tu plan y 
-                                            a partir de ese día siempre serán tus pagos cada mes.
-                                        </div>
-									</div>
-								</div>
-							</li>
-
-							<!--Block-->
-							<li class="accordion block active-block">
-								<div class="acc-btn active"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>¿Qué formas de pago manejan?</div>
-								<div class="acc-content current">
-									<div class="content">
-										<div class="text text-dark">
-                                            Multicajero Santander <br>
-                                            Ventanilla Banco Santander <br>
-                                            Transferencia <br>
-                                            Sucursales con efectivo o tarjeta de débito y crédito
-                                        </div>
-									</div>
-								</div>
-							</li>
-							
-							<!--Block-->
-							<li class="accordion block">
-								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>¿Cuáles son los tiempos de instalación?</div>
-								<div class="acc-content">
-									<div class="content">
-										<div class="text text-dark">
-                                            De 24 a 72 horas posteriores a la contratación.
-                                        </div>
-									</div>
-								</div>
-							</li>
-							
-							<!--Block-->
-							<li class="accordion block">
-								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>¿Qué pasa si olvido pagar mi mensualidad?</div>
-								<div class="acc-content">
-									<div class="content">
-										<div class="text text-dark">Después de tu fecha de corte, tienes 3 días máximo para realizar tu pago. 
-                                            Si excedes este tiempo tendrás un cobro extra de $60.00 por reconexión del servicio.
-                                        </div>
-									</div>
-								</div>
-							</li>
-							
-						</ul>
-						
-					</div>
-				</div>
-				
-				<!-- Image Column -->
-				<div class="image-column col-lg-7 col-md-12 col-sm-12">
-					<div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="pattern-layer" style="background-image: url(assets/images/contactanos/faq-pattern.png)"></div>
-						<div class="image titlt" data-tilt data-tilt-max="5">
-							<img src="assets/images/contactanos/faq.png" alt="" />
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Faq Section -->
+                        <div id="accordion">
+                            <h3>¿Qué costo tiene la instalación?</h3>
+                            <div class="mb-3">
+                                <p class="text-dark accordion-text">
+                                    Ninguno, con nosotros no tienes cobros extra.
+                                    El día que te instalemos pagar tu primer mensualidad acorde a tu plan y a partir de ese día siempre serán tus pagos cada mes.
+                                </p>
+                            </div>
+                            <h3 class="mt-3">¿Qué formas de pago manejan?</h3>
+                            <div class="mb-3">
+                                <p class="text-dark accordion-text">
+                                    Multicajero Santander <br>
+                                    Ventanilla Banco Santander <br>
+                                    Transferencia <br>
+                                    Sucursales con efectivo o tarjeta débito y crédito
+                                </p>
+                            </div>
+                            <h3 class="mt-3">¿Qué documentación se requiere para contratar?</h3>
+                            <div class="mb-3">
+                                <p class="text-dark accordion-text">
+                                    INE original que permita verificar la dirección del domicilio <br>
+                                    Comprobante de Domicilio o Contrato de Arrendamiento
+                                </p>
+                            </div>
+                            <h3 class="mt-3">¿Cuáles son sus tiempos de instalación?</h3>
+                            <div class="mb-3">
+                                <p class="text-dark accordion-text">De 24 a 72 horas posteriores a la contratación.</p>
+                            </div>
+                            <h3 class="mt-3">¿Qué pasa si olvido pagar mi mensualidad?</h3>
+                            <div class="mb-3">
+                                <p class="text-dark accordion-text">
+                                    Después de tu fecha de corte, tienes 3 días máximo para realizar tu pago. 
+                                    Si excedes este tiempo tendrás un cobro extra de $60.00 por reconexión del servicio.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Image Column -->
+                <div class="image-column col-lg-7 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="pattern-layer" style="background-image: url(images/resource/faq-pattern.png)"></div>
+                        <div class="image">
+                            <img src="assets/images/planes/faq.png" class="img-faq" alt="" />
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Faq Section -->
         
     </main>
     <!-- main end -->

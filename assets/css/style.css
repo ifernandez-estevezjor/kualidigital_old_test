@@ -407,6 +407,7 @@
 
 .appointment-section .title-column .inner-column{
 	position:relative;
+	margin-top: 20px;
 }
 
 .appointment-section .title-column h3{
@@ -469,6 +470,9 @@
 	top:0px;
 }
 
+.appoinment-style{
+	margin-top: 60px;
+}
 /*** 
 
 ====================================================================
@@ -688,6 +692,7 @@
 
 .services-section .content-column .text{
 	margin-bottom:var(--margin-bottom-30);
+	font-size: var(--font-18);
 }
 
 /*** 
@@ -1555,7 +1560,54 @@
 
 ***/
 
-.clients-section{
+.clients-section-three{
+position:relative;
+padding:20px 0px 100px;
+}
+
+.clients-section-three .inner-container{
+position:relative;
+}
+
+.clients-section-three .inner-container .box-one{
+position:absolute;
+left:-20px;
+top:15px;
+width:294px;
+height:169px;
+background-repeat:no-repeat;
+}
+
+.clients-section-three .inner-container .box-two{
+position:absolute;
+right:-20px;
+top:15px;
+width:294px;
+height:169px;
+background-repeat:no-repeat;
+}
+
+.clients-section-three .image-box img{
+position:relative;
+filter: grayscale(0%);
+-webkit-transition:all 500ms ease;
+-moz-transition:all 500ms ease;
+-ms-transition:all 500ms ease;
+-o-transition:all 500ms ease;
+transition:all 500ms ease;
+background-color:var(--dark-color-six);
+}
+
+.clients-section-three .image-box:hover img{
+filter: grayscale(100%);
+}
+
+.clients-section-three .owl-dots,
+.clients-section-three .owl-nav{
+display:none;
+}
+
+/*.clients-section{
 	position:relative;
 	padding:0px 0px 100px;
 }
@@ -1584,7 +1636,7 @@
 .clients-section .owl-dots,
 .clients-section .owl-nav{
 	display:none;
-}
+}*/
 
 /*** 
 
@@ -2020,6 +2072,58 @@
 .cta-section .form-column .inner-column{
 	position:relative;
 	padding-top:var(--padding-top-10);
+}
+
+
+
+.cta-section-two .inner-container {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    padding: 80px 50px 40px;
+    border-radius: 0px 45px 0px 45px;
+}
+
+.cta-section-two .inner-container::before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.90;
+    background: var(--main-color-four);
+    background: -webkit-linear-gradient(to bottom, var(--main-color-four) 0%, var(--main-color-five) 100%);
+    background: -moz-linear-gradient(to bottom, var(--main-color-four) 0%, var(--main-color-five) 100%);
+    background: linear-gradient(to bottom, var(--main-color-four) 0%, var(--main-color-five) 100%);
+}
+
+.cta-section-two .title-column {
+    position: relative;
+    margin-bottom: var(--margin-bottom-30);
+}
+
+.cta-section-two .title-column .inner-column {
+    position: relative;
+}
+
+.cta-section-two .title-column h3 {
+    font-size: var(--font-30);
+    color: var(--white-color);
+}
+
+.info-pago-box{
+	background-color: #ffffff;
+	margin-left: 250px;
+}
+
+.btn-info-pago{
+	margin-left: 45px;
+	margin-top: 25px;
+}
+
+.box-clearfix{
+	margin-top: -20px;
 }
 
 /* Newsletter Form */
@@ -2610,6 +2714,10 @@
 .faq-section .image-column .image{
 	position:relative;
 	z-index:1;
+}
+
+.accordion-text{
+	font-size: 16px;
 }
 
 /*** 
@@ -6907,6 +7015,12 @@
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+}
+
+.btn-right{
+	float: right;
+	margin-right: 145px;
+	margin-top: -20px;
 }
 
 .btn-style-nine:before {

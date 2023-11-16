@@ -2343,8 +2343,15 @@ h6 {
     max-width: 1520px;
 }
 
+.header__style-100 .container {
+    max-width: 1520px;
+}
+
 @media (max-width: 991px) {
     .header__style-2 {
+        padding: 15px 0px;
+    }
+    .header__style-100 {
         padding: 15px 0px;
     }
 }
@@ -2353,11 +2360,23 @@ h6 {
     border-color: #ffffff;
 }
 
+.header__style-100 .header__icons .icon {
+    border-color: #000;
+}
+
 .header__style-2 .header__icons .icon span {
     color: #ffffff;
 }
 
+.header__style-100 .header__icons .icon span {
+    color: #000;
+}
+
 .header__style-2 .header__logo a img:nth-child(2) {
+    display: none;
+}
+
+.header__style-100 .header__logo a img:nth-child(2) {
     display: none;
 }
 
@@ -2365,12 +2384,23 @@ h6 {
     display: none;
 }
 
+.header__style-100.sticky-header .header__logo a img:nth-child(1) {
+    display: none;
+}
+
 .header__style-2.sticky-header .header__logo a img:nth-child(2) {
+    display: inline-block;
+}
+
+.header__style-100.sticky-header .header__logo a img:nth-child(2) {
     display: inline-block;
 }
 
 @media (max-width: 767px) {
     .header__style-2 .header__btn .thm-btn {
+        display: none;
+    }
+    .header__style-100 .header__btn .thm-btn {
         display: none;
     }
 }
@@ -4644,6 +4674,10 @@ h6 {
     color: #B6B6B6;
 }
 
+.text-mv{
+    font-size: 18px;
+}
+
 /*----------------------------------------*/
 /*  05. cursor
 /*----------------------------------------*/
@@ -5623,7 +5657,7 @@ h6 {
 }
 
 .subscribe__bg {
-    background: url(../img/shape/subscribe__shape.png) no-repeat;
+    background: url(../images/streaming/subscribe__shape.png) no-repeat;
     background-size: auto;
     background-size: cover;
     background-color: #FF1749;
@@ -7370,7 +7404,7 @@ h6 {
         margin-left: -30px;
     }
     .thm-btn{
-        margin-right: 50px;
+        /*margin-right: 50px;*/
     }
     .img-network-3{
         width: 250px;
