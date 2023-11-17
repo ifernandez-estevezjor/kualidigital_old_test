@@ -97,3 +97,12 @@
 - Integración de secciones en el diseño de la página Planes. NOTA: Agregaron bloques de diferentes plantillas. PENDIENTE
 - Continuación del diseño de las secciones en la página Streaming, el carrusel de logos sigue pendiente.
 - Integración carrusel Clientes en la página Contáctanos. PENDIENTE.
+
+# Modificaciones 16/11/2023
+- Revisión y modificaciones al diseño responsivo. PENDIENTE
+- Integración de secciones en el diseño de la página Planes. NOTA: Agregaron bloques de diferentes plantillas. PENDIENTE
+- Continuación del diseño de las secciones en la página Streaming, el carrusel de logos sigue pendiente.
+- Integración carrusel Clientes en la página Contáctanos. PENDIENTE.
+- Modificación y validación de campos para el formulario de vacantes en la página Nosotros. PENDIENTE.
+- Modificación y validación de campos para el formulario de Contacto en la página Contáctanos. PENDIENTE.
+- Integración de una columna para enlaces en el footer.

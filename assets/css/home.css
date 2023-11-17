@@ -5787,7 +5787,7 @@ h6 {
     width: 0;
     height: 100%;
     z-index: -1;
-    background: url(../img/bg/service_bg_02.jpg) no-repeat;
+    background: url(../images/nosotros/service_bg_02.jpg) no-repeat;
     background-size: auto;
     background-size: cover;
     content: "";
@@ -7389,6 +7389,10 @@ h6 {
 }
 
 @media (max-width: 767px) {
+    .sec-title .text {
+        margin-top: 20px;
+        font-size: 18px;
+    }
     .products-box{
         margin-left: 0px;
     }
@@ -7404,7 +7408,7 @@ h6 {
         margin-left: -30px;
     }
     .thm-btn{
-        /*margin-right: 50px;*/
+        margin-right: 50px;
     }
     .img-network-3{
         width: 250px;
@@ -7413,5 +7417,35 @@ h6 {
     .contact-page-section .info-column .lower-box {
         position: relative;
         padding: 40px 20px 30px;
+    }
+    .btn-right{
+        margin-right: 50px;
+    }
+    .info-pago-box{
+        margin-left: 0px;
+        background-color: transparent;
+    }
+    .internet-section-four .image-column .inner-column{
+		padding:var(--padding-zero);
+	}
+	
+	.internet-section-four .content-column .inner-column{
+		padding-right:var(--padding-zero);
+	}
+	
+	.internet-section-four .content-column .internet-block:nth-child(2),
+	.internet-section-four .content-column .internet-block:nth-child(3){
+		transform: translateX(0px);
+	}
+	
+	.internet-section-four .image-column .image{
+		margin-right:0px;
+	}
+    .internet-section-four .image-column .image{
+		text-align:center;
+	}
+    .contact-page-section .contact-form-box {
+        padding-left: var(--padding-left-20);
+        padding-right: var(--padding-right-20);
     }
 }

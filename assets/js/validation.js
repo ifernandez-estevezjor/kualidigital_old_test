@@ -11,12 +11,8 @@ const form = document.querySelector('#signup');
 
 
 const checknombre_completo = () => {
-
     let valid = false;
-
-    const min = 3,
-        max = 100;
-
+    const min = 3, max = 100;
     const nombre_completo = nombre_completoEl.value.trim();
 
     if (!isRequired(nombre_completo)) {
@@ -31,11 +27,8 @@ const checknombre_completo = () => {
 };
 
 const checktel_celular = () => {
-
     let valid = false;
-
     const max = 10;
-
     const tel_celular = tel_celularEl.value.trim();
 
     if (!isRequired(tel_celular)) {
@@ -50,11 +43,8 @@ const checktel_celular = () => {
 };
 
 const checktel_otro = () => {
-
     let valid = false;
-
     const max = 10;
-
     const tel_otro = tel_otroEl.value.trim();
 
     if (!isRequired(tel_otro)) {
@@ -69,9 +59,7 @@ const checktel_otro = () => {
 };
 
 const checkestado = () => {
-
     let valid = false;
-
     const estado = estadoEl.value.trim();
 
     if (!isRequired(estado)) {
@@ -84,9 +72,7 @@ const checkestado = () => {
 };
 
 const checkmunicipio = () => {
-
     let valid = false;
-
     const municipio = municipioEl.value.trim();
 
     if (!isRequired(municipio)) {
@@ -99,9 +85,7 @@ const checkmunicipio = () => {
 };
 
 const checkcolonia_localidad = () => {
-
     let valid = false;
-
     const colonia_localidad = colonia_localidadEl.value.trim();
 
     if (!isRequired(colonia_localidad)) {
@@ -115,11 +99,8 @@ const checkcolonia_localidad = () => {
 
 
 const checkcodigo_postal = () => {
-
     let valid = false;
-
     const max = 5;
-
     const codigo_postal = codigo_postalEl.value.trim();
 
     if (!isRequired(codigo_postal)) {
@@ -134,9 +115,7 @@ const checkcodigo_postal = () => {
 };
 
 const checkaviso_privacidad = () => {
-
     let valid = false;
-
     const aviso_privacidad = aviso_privacidadEl.value.trim();
 
     if (!isRequired(aviso_privacidad)) {
