@@ -49,24 +49,31 @@
     <!-- scrollToTop end -->
     
     <!-- header start -->
-    <header id="sticky-header" class="header__area header__transparent header__style-2">
+    <header id="sticky-header" class="header__area header__transparent header__style-100">
         <div class="container">
             <div class="header__main-wrap d-flex align-items-center">
                 <div class="header__logo">
                     <a href="index.html">
                         <img src="assets/images/general/logo-kuali.png" alt="">
-                        <img src="assets/img/logo/logo_dark.png" alt="">
+                        <img src="assets/images/general/logo-kuali-sticky.png" alt="">
                     </a>
                 </div>
                 <div class="main_menu_wrap navbar navbar-expand-lg">
-                    <nav class="main_menu_section collapse navbar-collapse">
+                    <nav class="main_menu_index collapse navbar-collapse">
                         <ul class="main_menu_list ul_li">
-                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="planes.html">Planes</a></li>
                             <li><a href="streaming.html">Streaming</a></li>
                             <li><a href="cobertura.html">Cobertura</a></li>
                             <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="contactanos.html">Contáctanos</a></li>
+                            <li class="dropdown">
+                                <a class="nav-link" href="#!">Contáctanos <i class="fa fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://kualidigital.test/contactanos.html#sucursales">Sucursales</a></li>
+                                    <li><a href="http://kualidigital.test/contactanos.html#solicitarinfo">Solicitar Información</a></li>
+                                    <li><a href="http://kualidigital.test/contactanos.html#faq">Preguntas Frecuentes</a></li>
+                                </ul>
+                            </li>
                             <li><a href="empresarial.html">Empresarial</a></li>
                         </ul>
                     </nav>
@@ -83,7 +90,7 @@
                         <div class="hamburger_menu">
                             <a href="javascript:void(0);" class="active">
                                 <div class="icon bar d-lg-none">
-                                    <span><i class="far fa-bars"></i></span>
+                                    <span><i class="fa fa-bars"></i></span>
                                 </div>
                             </a>
                         </div>
@@ -180,55 +187,21 @@
 
         <!-- side-mobile-menu start -->
         <nav class="side-mobile-menu">
-            <div class="header-mobile-search">
-                <form role="search" method="get" action="#">
-                    <input type="text" placeholder="Search Keywords">
-                    <button type="submit"><i class="ti-search"></i></button>
-                </form>
-            </div>
             <ul id="mobile-menu-active">
-                <li class="dropdown"><a href="#!">Home</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="streaming.html">Streaming</a></li>
+                <li><a href="cobertura.html">Cobertura</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li class="dropdown">
+                    <a class="nav-link" href="#!">Contáctanos</a>
                     <ul class="sub-menu">
-                        <li><a href="index.html">Homepage One</a></li>
-                        <li><a href="index-2.html">Homepage Two</a></li>
-                        <li><a href="index-3.html">Homepage Three</a></li>
-                        <li><a href="index-4.html">Homepage Four</a></li>
-                        <li><a href="index-5.html">Homepage Five</a></li>
-                        <li><a href="index-6.html">Homepage Six</a></li>
-                        <li class="active"><a href="index-7.html">Homepage Seven</a></li>
-                        <li><a href="index-8.html">Homepage Eight</a></li>
-                        <li><a href="index-9.html">Homepage Nine</a></li>
+                        <li><a href="http://kualidigital.test/contactanos.html#sucursales">Sucursales</a></li>
+                        <li><a href="http://kualidigital.test/contactanos.html#solicitarinfo">Solicitar Información</a></li>
+                        <li><a href="http://kualidigital.test/contactanos.html#faq">Preguntas Frecuentes</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="#">About</a>
-                    <ul class="sub-menu">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="price.html">Pricing</a></li>
-                        <li><a href="movie.html">Movie's</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#">Services</a>
-                    <ul class="sub-menu">
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="services-detail.html">Services Detail</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#">Shop</a>
-                    <ul class="sub-menu">
-                        <li><a href="shop.html">Our Products</a></li>
-                        <li><a href="shop-single.html">Product Single</a></li>
-                        <li><a href="shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#">Blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="blog.html">Our Blog</a></li>
-                        <li><a href="news-detail.html">Blog Single</a></li>
-                        <li><a href="not-found.html">Not Found</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="empresarial.html">Empresarial</a></li>
             </ul>
         </nav>
         <!-- side-mobile-menu end -->
@@ -263,7 +236,7 @@
                                 <img src="assets/images/blog/news-7.jpg" alt="" />
                             </div>
                             <div class="lower-content">
-                                <h4>This Fun Site is All About Tracking Start Technologie</h4>
+                                <h4>KualiDigital: El Motor de Crecimiento para las PYMES: <br> La Transformación Digital y la Fibra Óptica de KualiDigital</h4>
                                 <ul class="post-meta">
                                     <li><span class="icon flaticon-user"></span>By Admin</li>
                                     <li><span class="icon flaticon-chat-2"></span>3 comments</li>
@@ -294,7 +267,7 @@
                                 <!-- Post Share Options-->
                                 <div class="post-share-options">
                                     <div class="post-share-inner clearfix">
-                                        <div class="pull-left tags"><span class="tags">Tags:</span><a href="#">Diploma</a> <a href="#">Diploma </a><a href="#">Diploma</a></div>
+                                        <div class="pull-left tags"><span class="tags">Tags:</span><a href="#">Internet</a> <a href="#">streaming </a><a href="#">fibra óptica</a></div>
                                         <ul class="social-box pull-right">
                                             <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
                                             <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -395,16 +368,6 @@
                 <!-- Sidebar Side -->
                 <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
                     <aside class="sidebar sticky-top">
-                        
-                        <!-- Search -->
-                        <div class="sidebar-widget search-box">
-                            <form method="post" action="contact.html">
-                                <div class="form-group">
-                                    <input type="search" name="search-field" value="" placeholder="Search Here ..." required>
-                                    <button type="submit"><span class="icon fa fa-search"></span></button>
-                                </div>
-                            </form>
-                        </div>
                         
                         <!-- Services Widget -->
                         <div class="sidebar-widget services-widget">

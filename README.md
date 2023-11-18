@@ -106,3 +106,12 @@
 - Modificación y validación de campos para el formulario de vacantes en la página Nosotros. PENDIENTE.
 - Modificación y validación de campos para el formulario de Contacto en la página Contáctanos. PENDIENTE.
 - Integración de una columna para enlaces en el footer.
+
+# Modificaciones 17/11/2023
+- Integración del script para SpeedTest en la página Planes (se tomó de la página actual de Kuali).
+- Integración y continuación de los carruseles en la página Streaming y Contáctanos. PENDIENTE
+- Se cambió el documento PDF del VectorMax en la página de Inicio.
+- Corrección de enlaces ancla contáctanos en la barra de navegación para todas las páginas.
+- Corrección de bloques en la sección valores, página Nosotros. PENDIENTE
+- Se integró el primer blog.
+- Se agregaron las imágenes de los canales en la página Streaming. PENDIENTE

@@ -8,6 +8,7 @@
         <title>KualiDigital - Streaming</title>
         <link rel="shortcut icon" type="image/x-icon" href="assets/images/general/favicon.ico">
 
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
         <link href="assets/css/animate.css" rel="stylesheet">
         <link href="assets/css/bootstrap.css" rel="stylesheet">
         <link href="assets/css/custom-animate.css" rel="stylesheet">
@@ -29,7 +30,6 @@
         <link href="assets/css/odometer.css" rel="stylesheet">
         <link href="assets/css/metisMenu.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     </head>
 <body>
     
@@ -281,7 +281,54 @@
         <div class="black-bg br-10 pt-120 pb-185">
             <div class="container">
                 <h2 class="text-white text-center">Todo un mundo de entretenimiento y diversión <span class="text-danger">en un solo lugar</span></h2>
-                <div class="row align-items-start mt-none-30">
+                <section class="clients-section p-5">
+                    <div class="auto-container">
+                        <div class="swiper myCanales">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/images/streaming/1-nacionales.jpg" style="width: 350px;height: auto;" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card bg-transparent border border-secondary mt-5 card-canales">
+                                        <div class="card-header bg-light text-center font-weight-bold">Entretenimiento</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card bg-transparent border border-secondary mt-5 card-canales">
+                                        <div class="card-header bg-light text-center font-weight-bold">Cultura</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card bg-transparent border border-secondary mt-5 card-canales">
+                                        <div class="card-header bg-light text-center font-weight-bold">Deportes</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card bg-transparent border border-secondary mt-5 card-canales">
+                                        <div class="card-header bg-light text-center font-weight-bold">Noticias</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title"></h5>
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>			
+                    </div>
+                </section>
+                <!-- <div class="row align-items-start mt-none-30">
                     <div class="col-xl-2 col-lg-6 col-md-6">
                         <div class="movie__item pos-rel mt-30 wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">
                             <div class="card bg-transparent border border-secondary mt-5" style="max-width: 12rem;">
@@ -359,7 +406,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- subscribe start -->
@@ -392,188 +439,20 @@
     <!-- Channel end -->
 
     <!-- Clients Section -->
-	<section class="clients-section">
+	<section class="clients-section p-5">
 		<div class="auto-container">
-			<div class="my-slider">
-                <div>test1</div>
-                <div>test2</div>
-                <div>test3</div>
-              </div>
-			<div class="carousel-outer">
-                <!--Sponsors Slider-->
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li><div class="image-box"><img src="assets/images/streaming/android-tv.png" alt=""></div></li>
-                    <li><div class="image-box"><img src="assets/images/streaming/2.png" alt=""></div></li>
-                    <li><div class="image-box"><img src="assets/images/streaming/3.png" alt=""></div></li>
-                    <li><div class="image-box"><img src="assets/images/streaming/4.png" alt=""></div></li>
-					<li><div class="image-box"><img src="assets/images/streaming/5.png" alt=""></div></li>
-                </ul>
-            </div>
-			
+			<div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/planes/1-firetv.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/planes/2-androidtv.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/planes/3-roku.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/planes/4-googleplay.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/planes/5-appstore.png" alt=""></div>
+                </div>
+            </div>			
 		</div>
 	</section>
 	<!-- End Clients Section -->
-
-    <!-- Store Section -->
-	<section class="store-section">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<div class="title">Online store</div>
-				<h2>Our popular products</h2>
-			</div>
-			<!-- End Sec Title -->
-			
-			<div class="four-item-carousel owl-carousel owl-theme">
-				
-				<!-- Product Block -->
-				<div class="product-block">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-single.html"><img src="assets/images/streaming/1.png" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<a href="shop-single.html" class="name">WiFe Streaming Router</a>
-							<div class="price">$33.40</div>
-							<ul class="shop-options">
-								<li><a href="shop-single.html" class="cart">Add to Cart</a></li>
-								<li><a href="shop-single.html" class="fa fa-heart"></a></li>
-								<li><a href="shop-single.html" class="fa fa-random"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Product Block -->
-				<div class="product-block">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-single.html"><img src="assets/images/streaming/2.png" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<a href="shop-single.html" class="name">Ultra HD 2GB+8GB TV Box</a>
-							<div class="price">$33.40</div>
-							<ul class="shop-options">
-								<li><a href="shop-single.html" class="cart">Add to Cart</a></li>
-								<li><a href="shop-single.html" class="fa fa-heart"></a></li>
-								<li><a href="shop-single.html" class="fa fa-random"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Product Block -->
-				<div class="product-block">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-single.html"><img src="assets/images/streaming/3.png" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<a href="shop-single.html" class="name">Bluetooth Speaker</a>
-							<div class="price">$33.40</div>
-							<ul class="shop-options">
-								<li><a href="shop-single.html" class="cart">Add to Cart</a></li>
-								<li><a href="shop-single.html" class="fa fa-heart"></a></li>
-								<li><a href="shop-single.html" class="fa fa-random"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Product Block -->
-				<div class="product-block">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-single.html"><img src="assets/images/streaming/4.png" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<a href="shop-single.html" class="name">Nest Cam Indoor</a>
-							<div class="price">$33.40</div>
-							<ul class="shop-options">
-								<li><a href="shop-single.html" class="cart">Add to Cart</a></li>
-								<li><a href="shop-single.html" class="fa fa-heart"></a></li>
-								<li><a href="shop-single.html" class="fa fa-random"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Product Block -->
-				<div class="product-block">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-single.html"><img src="assets/images/streaming/1.png" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<a href="shop-single.html" class="name">WiFe Streaming Router</a>
-							<div class="price">$33.40</div>
-							<ul class="shop-options">
-								<li><a href="shop-single.html" class="cart">Add to Cart</a></li>
-								<li><a href="shop-single.html" class="fa fa-heart"></a></li>
-								<li><a href="shop-single.html" class="fa fa-random"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Product Block -->
-				<div class="product-block">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-single.html"><img src="assets/images/streaming/2.png" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<a href="shop-single.html" class="name">Ultra HD 2GB+8GB TV Box</a>
-							<div class="price">$33.40</div>
-							<ul class="shop-options">
-								<li><a href="shop-single.html" class="cart">Add to Cart</a></li>
-								<li><a href="shop-single.html" class="fa fa-heart"></a></li>
-								<li><a href="shop-single.html" class="fa fa-random"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Product Block -->
-				<div class="product-block">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-single.html"><img src="assets/images/streaming/3.png" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<a href="shop-single.html" class="name">Bluetooth Speaker</a>
-							<div class="price">$33.40</div>
-							<ul class="shop-options">
-								<li><a href="shop-single.html" class="cart">Add to Cart</a></li>
-								<li><a href="shop-single.html" class="fa fa-heart"></a></li>
-								<li><a href="shop-single.html" class="fa fa-random"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Product Block -->
-				<div class="product-block">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-single.html"><img src="assets/images/streaming/4.png" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<a href="shop-single.html" class="name">Nest Cam Indoor</a>
-							<div class="price">$33.40</div>
-							<ul class="shop-options">
-								<li><a href="shop-single.html" class="cart">Add to Cart</a></li>
-								<li><a href="shop-single.html" class="fa fa-heart"></a></li>
-								<li><a href="shop-single.html" class="fa fa-random"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Store Section -->
         
     </main>
     <!-- main end -->
@@ -715,6 +594,26 @@
     
 </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        }
+    });
+    var swiper = new Swiper(".myCanales", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        }
+    });
+    </script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
