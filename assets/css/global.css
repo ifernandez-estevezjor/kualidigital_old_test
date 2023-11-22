@@ -1423,76 +1423,78 @@ img {
 
 /* Btn Style Twelve */
 
-.btn-style-twelve {
+/* Btn Style Twelve */
+
+.btn-style-twelve{
 	position: relative;
 	line-height: 30px;
-	font-weight: 700;
+	font-weight:700;
 	overflow: hidden;
-	background: none;
-	text-align: center;
-	border-radius: 50px;
+	background:none;
+	text-align:center;
+	border-radius:50px;
 	display: inline-grid;
 	padding: 14px 36px;
 	font-size: var(--font-15);
 	text-transform: capitalize;
-	color: var(--white-color);
+	color: var(--white-color); 
 	background: var(--main-color-ten);
-	font-family: 'Roboto', sans-serif;
+	font-family:var(--font-family-Sen);
 	background: -webkit-linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
 	background: -moz-linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
 	background: linear-gradient(to right, var(--main-color-ten) 0%, var(--main-color-eleven) 100%);
 }
 
-.btn-style-twelve:before {
+.btn-style-twelve:before{
 	position: absolute;
 	content: '';
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	-webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	transition: all 0.4s;
-	-webkit-transform: scale(0.2, 1);
-	transform: scale(0.2, 1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: scale(0.2, 1);
+    transform: scale(0.2, 1);
 	background: var(--white-color);
 }
 
-.btn-style-twelve:hover::before {
-	opacity: 1;
+.btn-style-twelve:hover::before{
+	opacity:1;
 	-webkit-transform: scale(1, 1);
-	transform: scale(1, 1);
+    transform: scale(1, 1);
 }
 
-.btn-style-twelve i {
-	position: relative;
-	top: 2px;
-	font-style: normal;
-	line-height: 1em;
-	margin-left: 5px;
-	transform: rotate(-45deg);
-	display: inline-block;
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
+.btn-style-twelve i{
+	position:relative;
+	top:2px;
+	font-style:normal;
+	line-height:1em;
+	margin-left:5px;
+	transform:rotate(-45deg);
+	display:inline-block;
+	-webkit-transition:all 500ms ease;
+	-moz-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
 }
 
-.btn-style-twelve:hover i {
-	transform: rotate(0deg);
+.btn-style-twelve:hover i{
+	transform:rotate(0deg);
 }
 
-.btn-style-twelve .txt {
-	position: relative;
-	z-index: 1;
+.btn-style-twelve .txt{
+	position:relative;
+	z-index:1;
 }
 
-.btn-style-twelve:hover {
-	color: var(--main-color-eleven);
+.btn-style-twelve:hover{
+	color:var(--main-color-eleven);
 }
 
 /* Btn Style Thirteen */

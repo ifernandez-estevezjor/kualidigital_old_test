@@ -99,7 +99,7 @@
 - Integración carrusel Clientes en la página Contáctanos. PENDIENTE.
 
 # Modificaciones 16/11/2023
-- Revisión y modificaciones al diseño responsivo. PENDIENTE
+- Revisión y modificaciones al diseño responsivo.
 - Integración de secciones en el diseño de la página Planes. NOTA: Agregaron bloques de diferentes plantillas. PENDIENTE
 - Continuación del diseño de las secciones en la página Streaming, el carrusel de logos sigue pendiente.
 - Integración carrusel Clientes en la página Contáctanos. PENDIENTE.
@@ -115,3 +115,12 @@
 - Corrección de bloques en la sección valores, página Nosotros. PENDIENTE
 - Se integró el primer blog.
 - Se agregaron las imágenes de los canales en la página Streaming. PENDIENTE
+
+# Modificaciones 21/11/2023
+- Integración y continuación de los carruseles en la página Streaming y Contáctanos.
+- Corrección de bloques en la sección valores, página Nosotros.
+- Se agregaron las imágenes de los canales en la página Streaming.
+- Integración del buscador dentro del mapa Google Maps en la página Contáctanos. PENDIENTE
+- Funcionamiento de los formularios para planes, streaming, vacantes y contactános (Realizar pruebas en producción). PENDIENTE
+- Corrección y modificaciones visuales al diseño de las páginas en general.
+- Modificación y validación de campos para el formulario de Contacto en la página Contáctanos (revisar validación para el check del Aviso de Privacidad). PENDIENTE

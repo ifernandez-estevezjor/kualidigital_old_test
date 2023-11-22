@@ -7,7 +7,7 @@
 @import url('header.css');
 @import url('footer.css');
 @import url('icofont.css');
-@import url('font-awesome.css');
+@import url('fontawesome.css');
 @import url('flaticon.css');
 @import url('animate.css');
 @import url('owl.css');
@@ -3206,16 +3206,16 @@ display:none;
 
 /** Swiper Slider **/
 .swiper {
-	width: 80%;
-	height: 50%;
+	width: 100%;
+	height: 100%;
 }
 
 .swiper-slide {
-	/*text-align: center;
+	/*text-align: center;*/
 	font-size: 18px;
 	display: flex;
 	justify-content: center;
-	align-items: center;*/
+	align-items: center;
 }
 
 .swiper-slide img {
@@ -5333,7 +5333,7 @@ display:none;
 
 .contact-page-section .info-column .lower-box{
 	position:relative;
-	padding:40px 35px 30px;
+	padding:40px 18px 30px;
 }
 
 .contact-page-section .info-column .info-list{
@@ -7144,7 +7144,7 @@ display:none;
     position: relative;
 	padding: 15px 0px;
     border-radius: 4px;
-    background-color: var(--dark-color-eight);
+    background-color: var(--dark-color-three);
 }
 
 .default-section .carousel-column .carousel-box {
@@ -7174,14 +7174,15 @@ display:none;
     font-family: var(--font-family-Sen);
 }
 
-.form-column{
-	/*background-color: var(--dark-color-seven);*/
-	padding: 30px;
-	margin-bottom: 30px;
+.default-section .form-column .inner-column {
+    position: relative;
+    padding: 35px 35px;
+    border-radius: 4px;
+    background-color: var(--dark-color-eight);
 }
 
 .form-column{
-	background-color: var(--dark-color-seven);
+	background-color: var(--dark-color-eight);
 	padding: 30px;
 	margin-bottom: 30px;
 }
@@ -7285,6 +7286,11 @@ button, input {
 .client-form .form-group .radio-box input[type="radio"]:checked + label:before {
     border: 5px solid var(--main-color-eleven);
     background-color: var(--white-color);
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .client-form .theme-btn-contact {
@@ -7413,4 +7419,10 @@ button, a:hover, a:focus, a:visited {
 
 .btn-style-contact:hover{
 	color:rgb(1, 62, 255);
+}
+
+.client-form .theme-btn {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
 }

@@ -5750,7 +5750,7 @@ h6 {
 .services__item {
     background-color: #F9F9FC;
     padding: 70px 40px 85px 40px;
-    border-right: 1px solid #E9EEF1;
+    border: 1px solid #E9EEF1;
     position: relative;
     z-index: 1;
 }
@@ -5875,6 +5875,7 @@ h6 {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    color: black;
 }
 
 .services__bg {

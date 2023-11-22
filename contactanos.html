@@ -30,6 +30,7 @@
         <link href="assets/css/odometer.css" rel="stylesheet">
         <link href="assets/css/metisMenu.css" rel="stylesheet">
         <link href="assets/css/home.css" rel="stylesheet">
+        <link href="assets/css/validation.css" rel="stylesheet">
 
         <!-- Accordion script -->
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -296,14 +297,13 @@
 		<div class="auto-container">
 			<div class="row clearfix">
 			
-				<!-- Carousel Column -->
 				<div class="carousel-column col-lg-6 col-md-12 col-sm-12">
                     <h3 class="mb-3" style="font-family: 'Sen', sans-serif;">Lo que opinan nuestros clientes</h3>
 					<div class="inner-column">
 						<div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="box-clientes">
+                                    <div class="box-clientes px-4">
                                         <div class="text-white box-clientes-title">
                                             ‘’Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deseru ullamco velit  veniam consequat sunt nostrud amet.’’
                                         </div>
@@ -317,7 +317,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="box-clientes">
+                                    <div class="box-clientes px-4">
                                         <div class="text-white box-clientes-title">
                                             ‘’Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deseru ullamco velit  veniam consequat sunt nostrud amet.’’
                                         </div>
@@ -331,7 +331,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="box-clientes">
+                                    <div class="box-clientes px-4">
                                         <div class="text-white box-clientes-title">
                                             ‘’Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deseru ullamco velit  veniam consequat sunt nostrud amet.’’
                                         </div>
@@ -349,21 +349,19 @@
 					</div>
 				</div>
 				
-				<!-- Form Column -->
-				<div class="form-column form-column-bg col-lg-6 col-md-12 col-sm-12">
+				<div class="form-column col-lg-6 col-md-12 col-sm-12">
 					<div class="inner-column">
-						<!-- Title Box -->
-						<div class="title-box" id="contact-form">
+
+						<div class="title-box">
 							<h3>Información y Soporte</h3>
 							<div class="text">Déjanos tus datos y nuestro equipo se pondrá en contacto contigo.</div>
 							<div class="text">Los campos marcados con (*) son obligatorios.</div>
 						</div>
-						
-						<!-- Client Form -->
-						<div class="client-form">
-							<form action="contact.html" id="signup" method="post">
-								<div class="row clearfix">
 
+						<div class="client-form">
+							<form method="post" action="#" id="signup" enctype="multipart/form-data">
+								<div class="row clearfix">
+								
 									<div class="form-field col-lg-6 col-md-6 col-sm-12 mb-3">
 										<input type="text" name="nombre_completo" id="nombre_completo" placeholder="*Nombre Completo">
                                         <small></small>
@@ -384,43 +382,49 @@
 
 									<div class="form-field col-lg-6 col-md-6 col-sm-12 mb-3">
 										<select name="estado" id="estado"></select>
+                                        <small></small>
 									</div>
 
 									<div class="form-field col-lg-6 col-md-6 col-sm-12">
 										<select name="municipio" id="municipio"></select>
+                                        <small></small>
 									</div>
 
 									<div class="form-field col-lg-6 col-md-12 col-sm-12 mb-3">
-										<input type="text" name="colonia_localidad" id="colonia_localidad" placeholder="Colonia o Localidad" required>
+										<input type="text" name="colonia_localidad" placeholder="Colonia o Localidad">
 									</div>
 
 									<div class="form-field col-lg-6 col-md-12 col-sm-12">
-										<input type="text" name="codigo_postal" id="codigo_postal" placeholder="Código Postal" required>
+										<input type="text" name="codigo_postal" placeholder="Código Postal">
 									</div>
 
 									<div class="form-field col-lg-12 col-md-12 col-sm-12">
-										<select class="form-group" name="motivo_consulta" id="motivo_consulta">
-                                            <option selected>*Motivo de Consulta</option>
+										<select name="motivo_consulta" id="motivo_consulta">
+                                            <!-- <option>*Motivo de Consulta</option>
                                             <option value="50megas">Me interesa Plan 50 Megas</option>
                                             <option value="100megas">Me interesa Plan 100 Megas</option>
                                             <option value="200megas">Me interesa Plan 200 Megas</option>
-                                            <option value="500megas">Me interesa Plan 500 Megas</option>
+                                            <option value="500megas">Me interesa Plan 500 Megas</option> -->
                                         </select>
+                                        <small></small>
 									</div>
 
 									<div class="form-field col-lg-12 col-md-12 col-sm-12">
 										<textarea name="message" id="message" placeholder="*Escribe tu mensaje..." cols="60" rows="150"></textarea>
+                                        <small></small>
 									</div>
 									
-									<div class="form-field col-lg-12 col-md-12 col-sm-12">
+									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<div class="text-contact">¿Cómo prefiero ser contactado?</div>
 										<div class="row clearfix">
+											<!-- Column -->
 											<div class="column col-lg-3 col-md-4 col-sm-12">
 												<div class="radio-box">
 													<input type="radio" name="llamada" id="type-1"> 
 													<label for="type-1">Llamada</label>
 												</div>
 											</div>
+											<!-- Column -->
 											<div class="column col-lg-3 col-md-4 col-sm-12">
 												<div class="radio-box">
 													<input type="radio" name="whatsapp" id="type-2"> 
@@ -430,11 +434,11 @@
 										</div>
 									</div>
 
-									<div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<div class="row clearfix">
-											<div class="column col-lg-6 col-md-4 col-sm-12">
+											<div class="column col-lg-7 col-md-4 col-sm-12">
 												<div class="radio-box">
-													<input type="radio" name="privacy-accepted" id="type-3"> 
+													<input type="radio" name="accepted" id="type3"> 
 													<label for="type-3"><a href="aviso-de-privacidad.html" class="text-white" target="_blank">*Acepto Aviso de Privacidad</a></label>
 												</div>
 											</div>
@@ -442,7 +446,7 @@
 									</div>
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<button type="submit" class="theme-btn-contact btn-style-contact"><span class="txt">Enviar</span></button>
+										<button type="submit" name="submitForm" class="theme-btn btn-style-twelve"><span class="txt">Enviar</span></button>
 									</div>
 									
 								</div>
@@ -700,5 +704,6 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/select_estados.js"></script>
     <script src="assets/js/municipios.js"></script>
+    <script src="assets/js/validation-contacto.js"></script>
 </body>
 </html>
