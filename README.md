@@ -124,3 +124,13 @@
 - Funcionamiento de los formularios para planes, streaming, vacantes y contactános (Realizar pruebas en producción). PENDIENTE
 - Corrección y modificaciones visuales al diseño de las páginas en general.
 - Modificación y validación de campos para el formulario de Contacto en la página Contáctanos (revisar validación para el check del Aviso de Privacidad). PENDIENTE
+
+# Modificaciones 22/11/2023
+- Integración del buscador de sucursales dentro del mapa Google Maps en la página Contáctanos. PENDIENTE
+- Funcionamiento de los formularios para planes, streaming, vacantes y contactános (Realizar pruebas en producción). PENDIENTE
+- Corrección y modificaciones visuales al diseño de las páginas en general.
+- Modificación y validación de campos para el formulario de Contacto en la página Contáctanos (revisar validación para el check del Aviso de Privacidad). PENDIENTE
+- Se insertó video de introducción Kuali en la página de Inicio.
+- Corrección y modificaciones visuales y de enlaces del diseño de las páginas en general.
+- Corrección y modificaciones al carrusel de la sección contratar en la página Planes.
+- Revisión y modificaciones al diseño responsivo.

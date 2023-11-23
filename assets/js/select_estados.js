@@ -14,7 +14,7 @@ $(document).ready(function(){
         var html = "<option style='background-color:var(--dark-color-eight);' value='' disabled selected>*Municipio</option>";
         $( "#estado option:selected" ).each(function() {
             var estado = $(this).text();
-            if(estado != "Estado"){
+            if(estado != "*Estado"){
                 var municipio = municipios[estado];
                 for (var i = 0; i < municipio.length; i++)
                     html += "<option style='background-color:var(--dark-color-eight);' value='" + municipio[i] + "'>" + municipio[i] + "</option>";

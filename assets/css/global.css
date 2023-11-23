@@ -867,12 +867,12 @@ img {
 	background-color: var(--white-color);
 }
 
-.btn-style-two:hover::before {
+/*.btn-style-two:hover::before {
 	opacity: 1;
 	-webkit-transform: scale(1, 1);
 	transform: scale(1, 1);
 	color: black;
-}
+}*/
 
 .btn-style-two .txt {
 	position: relative;
@@ -887,9 +887,9 @@ img {
 	margin-left: 5px;
 }
 
-.btn-style-two:hover {
+/*.btn-style-two:hover {
 	color: var(--main-color-two);
-}
+}*/
 
 /* Btn Style Three */
 
@@ -1463,11 +1463,11 @@ img {
 	background: var(--white-color);
 }
 
-.btn-style-twelve:hover::before{
+/*.btn-style-twelve:hover::before{
 	opacity:1;
 	-webkit-transform: scale(1, 1);
     transform: scale(1, 1);
-}
+}*/
 
 .btn-style-twelve i{
 	position:relative;

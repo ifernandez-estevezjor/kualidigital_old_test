@@ -8,6 +8,7 @@
         <title>KualiDigital - Planes</title>
         <link rel="shortcut icon" type="image/x-icon" href="assets/images/general/favicon.ico">
 
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
         <link href="assets/css/animate.css" rel="stylesheet">
         <link href="assets/css/bootstrap.css" rel="stylesheet">
         <link href="assets/css/custom-animate.css" rel="stylesheet">
@@ -297,7 +298,7 @@
                         <!-- End Title Box -->
                         
                         <!-- Middle Content -->
-                        <div class="middle-content">
+                        <div class="middle-content middle-content-responsive">
                             <div class="middle-inner">
                                 <ul class="icon-list">
                                     <li><span class="icon"><img src="assets/images/planes/service-1.png" alt="" /></span></li>
@@ -377,7 +378,7 @@
                 <div class="price-block-two">
                     <div class="inner-box">
                         <!-- Title Box -->
-                        <div class="title-box">
+                        <div class="title-box title-box-responsive">
                             <div class="title">Sé parte de la comunidad ÉLITE</div>
                             <h4><a href="price.html">500 MEGAS</a></h4>
                             <div class="text">Elija entre una gama de velocidades de Internet rápidas y confiables para satisfacer sus necesidades.</div>
@@ -436,7 +437,7 @@
                     <div class="form-column col-lg-6 col-md-12 col-sm-12">
                         <div class="inner-column">
                             <div class="form-group">
-                                <button type="submit" class="theme-btn btn-style-two btn-right"><span class="txt">Revisar Cobertura <i class="lnr lnr-arrow-right"></i></span></button>
+                                <a href="cobertura.html" class="theme-btn btn-style-two btn-right"><span class="txt">Revisar Cobertura <i class="lnr lnr-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -507,23 +508,59 @@
                     <div class="box-two" style="background-image: url(assets/images/planes/client-box-2.png)"></div>
                     <!-- Sec Title Three / Light -->
                     <div class="sec-title-three centered light">
-                        <h2>Brands we’ve Collaborated <br> with Team.</h2>
+                        <h2><span class="text-danger">¿Qué necesito</span> para contratar?</h2>
                     </div>
                     
                     <div class="carousel-outer">
-                        <!--Sponsors Slider-->
-                        <ul class="sponsors-carousel-two owl-carousel owl-theme">
-                            <li class="text-white">test</li>
-                            <li><div class="image-box"><a href="#"><img src="assets/images/planes/faq.png" alt=""></a></div></li>
-                            <li><div class="image-box"><a href="#"><img src="images/clients/11.png" alt=""></a></div></li>
-                            <li><div class="image-box"><a href="#"><img src="images/clients/12.png" alt=""></a></div></li>
-                            <li><div class="image-box"><a href="#"><img src="images/clients/13.png" alt=""></a></div></li>
-                            <li><div class="image-box"><a href="#"><img src="images/clients/14.png" alt=""></a></div></li>
-                            <li><div class="image-box"><a href="#"><img src="images/clients/10.png" alt=""></a></div></li>
-                            <li><div class="image-box"><a href="#"><img src="images/clients/11.png" alt=""></a></div></li>
-                            <li><div class="image-box"><a href="#"><img src="images/clients/12.png" alt=""></a></div></li>
-                            <li><div class="image-box"><a href="#"><img src="images/clients/13.png" alt=""></a></div></li>
-                        </ul>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper mt-4">
+                                <div class="swiper-slide">
+                                    <div class="container text-center col-lg-9 col-md-12 col-sm-12 p-4 box-contratar img-box">
+                                        <div class="row align-items-center">
+                                            <div class="col text-contratar-1">
+                                                1. Infórmanos tu ubicación.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="container text-center col-lg-9 p-4 box-contratar img-box">
+                                        <div class="row align-items-center">
+                                            <div class="col text-contratar-2">
+                                                2. Presenta tu INE (original y copia).
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="container text-center col-lg-9 p-4 box-contratar img-box">
+                                        <div class="row align-items-center">
+                                            <div class="col text-contratar-3">
+                                                3. Compártenos un comprobante de domicilio.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="container text-center col-lg-9 p-4 box-contratar img-box">
+                                        <div class="row align-items-center">
+                                            <div class="col text-contratar">
+                                                4. Revisa y valida tus datos en el contrato.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="container text-center col-lg-9 p-4 box-contratar img-box">
+                                        <div class="row align-items-center">
+                                            <div class="col text-contratar">
+                                                5. Indícanos qué y día y hora podemos ir a instalarte.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                 </div>
@@ -775,6 +812,35 @@
         
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            }
+        }
+    });
+    </script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

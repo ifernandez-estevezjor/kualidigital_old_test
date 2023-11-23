@@ -7449,4 +7449,42 @@ h6 {
         padding-left: var(--padding-left-20);
         padding-right: var(--padding-right-20);
     }
+    .box-contratar{
+        width: 120px;
+        height: 260px;
+    }
+    .text-contratar-1{
+        font-size: 15px;
+        text-align: center;
+    }
+    .text-contratar-2{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 28px;
+    }
+    .text-contratar-3{
+        font-size: 15px;
+        text-align: center;
+        margin-left: -10px;
+        margin-top: 12px;
+    }
+    .text-contratar{
+        font-size: 15px;
+        text-align: center;
+    }
+    .middle-content{
+        margin-left: -320px;
+        margin-top: 280px;
+    }
+    .middle-content-responsive{
+        margin-left: -320px;
+        margin-top: 320px;
+    }
+    .icon-list{
+        margin-top: -120px;
+    }
+    .features{
+        margin-left: -260px;
+    }
+    
 }

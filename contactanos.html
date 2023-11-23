@@ -417,18 +417,16 @@
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<div class="text-contact">¿Cómo prefiero ser contactado?</div>
 										<div class="row clearfix">
-											<!-- Column -->
 											<div class="column col-lg-3 col-md-4 col-sm-12">
 												<div class="radio-box">
-													<input type="radio" name="llamada" id="type-1"> 
-													<label for="type-1">Llamada</label>
+													<input type="radio" class="btn-check" name="btnradio" id="btnradio1" value="llamada">
+                                                    <label for="btnradio1">Llamada</label>
 												</div>
 											</div>
-											<!-- Column -->
 											<div class="column col-lg-3 col-md-4 col-sm-12">
 												<div class="radio-box">
-													<input type="radio" name="whatsapp" id="type-2"> 
-													<label for="type-2">WhatsApp</label>
+													<input type="radio" class="btn-check" name="btnradio" id="btnradio2" value="whatsapp">
+                                                    <label for="btnradio2">WhatsApp</label>
 												</div>
 											</div>
 										</div>
@@ -436,17 +434,45 @@
 
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
 										<div class="row clearfix">
-											<div class="column col-lg-7 col-md-4 col-sm-12">
+											<div class="form-field column col-lg-8 col-md-4 col-sm-12">
 												<div class="radio-box">
-													<input type="radio" name="accepted" id="type3"> 
-													<label for="type-3"><a href="aviso-de-privacidad.html" class="text-white" target="_blank">*Acepto Aviso de Privacidad</a></label>
+													<input type="radio" class="btn-check" name="btnradiopriv" id="btnradio3" value="aceptado"> 
+													<label for="btnradio3">*Acepto Aviso de Privacidad<a href="aviso-de-privacidad.html" class="text-white" target="_blank"> (Ver)</a></label>
 												</div>
+                                                <small id="output"></small>
 											</div>
 										</div>
 									</div>
+
+                                    <!-- <div>
+                                        <input type="radio" name="size" value="XS" id="xs">
+                                        <label for="xs">XS</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="size" value="S" id="s">
+                                        <label for="s">S</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="size" value="M" id="m">
+                                        <label for="m">M</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="size" value="L" id="l">
+                                        <label for="l">L</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="size" value="XL" id="xl">
+                                        <label for="xl">XL</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="size" value="XXL" id="xxl">
+                                        <label for="xxl">XXL</label>
+                                    </div>
+                                
+                                    <p id="output"></p> -->
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<button type="submit" name="submitForm" class="theme-btn btn-style-twelve"><span class="txt">Enviar</span></button>
+										<button type="submit" name="submitForm" id="btn" class="theme-btn btn-style-twelve"><span class="txt">Enviar</span></button>
 									</div>
 									
 								</div>

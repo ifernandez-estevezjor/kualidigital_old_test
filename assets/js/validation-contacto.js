@@ -4,9 +4,36 @@ const estadoEl = document.querySelector('#estado');
 const municipioEl = document.querySelector('#municipio');
 const motivo_consultaEl = document.querySelector('#motivo_consulta');
 const messageEl = document.querySelector('#message');
-const type3El = document.querySelector('#type3');
-
+const btnradio3El = document.querySelector('#btnradio3');
 const form = document.querySelector('#signup');
+const btn = document.querySelector('#btn');        
+const radioButtons = document.querySelectorAll('input[name="btnradiopriv"]');
+
+/*const btn = document.querySelector('#btn');        
+        const radioButtons = document.querySelectorAll('input[name="size"]');
+        btn.addEventListener("click", () => {
+            let selectedSize;
+            for (const radioButton of radioButtons) {
+                if (radioButton.checked) {
+                    selectedSize = radioButton.value;
+                    break;
+                }
+            }
+            // show the output:
+            output.innerText = selectedSize ? `You selected ${selectedSize}` : `You haven't selected any size`;
+        });*/
+        
+btn.addEventListener("click", () => {
+    let selectedAvpriv;
+    for (const radioButton of radioButtons) {
+        if (radioButton.checked) {
+            selectedAvpriv = radioButton.value;
+            break;
+        }
+    }
+    // show the output:
+    output.innerText = selectedAvpriv ? `You selected ${selectedAvpriv}` : `Acepta el Aviso de Privacidad.`;
+});
 
 
 const checknombre_completo = () => {
@@ -96,14 +123,14 @@ const checkmessage = () => {
     return valid;
 };
 
-const checkaviso_privacidad = () => {
+const checkbtnradio3 = () => {
     let valid = false;
-    const aviso_privacidad = aviso_privacidadEl.value.trim();
+    const btnradio3 = btnradio3El.value.trim();
 
-    if (!isRequired(aviso_privacidad)) {
-        showError(aviso_privacidadEl, 'Acepta el Aviso de Privacidad.');
+    if (!isRequired(btnradio3)) {
+        showError(btnradio3El, 'Acepta el Aviso de Privacidad.');
     } else {
-        showSuccess(aviso_privacidadEl);
+        showSuccess(btnradio3El);
         valid = true;
     }
     return valid;
@@ -150,7 +177,7 @@ form.addEventListener('submit', function (e) {
         ismunicipioValid = checkmunicipio(),
         ismotivo_consultaValid = checkmotivo_consulta(),
         ismessageValid = checkmessage(),
-        isaviso_privacidadValid = checkaviso_privacidad();
+        isbtnradio3Valid = checkbtnradio3();
 
     let isFormValid = isnombre_completoValid &&
         istel_celularValid &&
@@ -158,7 +185,7 @@ form.addEventListener('submit', function (e) {
         ismunicipioValid &&
         ismotivo_consultaValid &&
         ismessageValid &&
-        isaviso_privacidadValid;
+        isbtnradio3Valid;
 
     // submit to the server if the form is valid
     if (isFormValid) {
@@ -201,8 +228,8 @@ form.addEventListener('input', debounce(function (e) {
         case 'message':
             checkmessage();
             break;
-        case 'aviso_privacidad':
-            checkaviso_privacidad();
+        case 'btnradio3':
+            checkbtnradio3();
             break;
     }
 }));

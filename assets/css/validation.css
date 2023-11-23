@@ -97,8 +97,16 @@
     border-color: var(--success-color);
 }
 
+.form-field.error .btnradio3 {
+    color: var(--error-color);
+}
+
 .form-field small {
     color: var(--error-color);
+}
+
+#output{
+    color: #dc3545;
 }
 
 
