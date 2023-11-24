@@ -125,7 +125,7 @@
             <div class="cart_items_list">
                 <div class="cart_item">
                     <div class="item_image">
-                        <img src="assets/img/shop/img_01.jpg" alt="image_not_found">
+                        <img src="#" alt="image_not_found">
                     </div>
                     <div class="item_content">
                         <h4 class="item_title">
@@ -137,7 +137,7 @@
                 </div>
                 <div class="cart_item">
                     <div class="item_image">
-                        <img src="assets/img/shop/img_02.jpg" alt="image_not_found">
+                        <img src="#" alt="image_not_found">
                     </div>
                     <div class="item_content">
                         <h4 class="item_title">
@@ -149,7 +149,7 @@
                 </div>
                 <div class="cart_item">
                     <div class="item_image">
-                        <img src="assets/img/shop/img_03.jpg" alt="image_not_found">
+                        <img src="#" alt="image_not_found">
                     </div>
                     <div class="item_content">
                         <h4 class="item_title">
@@ -161,7 +161,7 @@
                 </div>
                 <div class="cart_item">
                     <div class="item_image">
-                        <img src="assets/img/shop/img_04.jpg" alt="image_not_found">
+                        <img src="#" alt="image_not_found">
                     </div>
                     <div class="item_content">
                         <h4 class="item_title">
@@ -400,11 +400,7 @@
 
 									<div class="form-field col-lg-12 col-md-12 col-sm-12">
 										<select name="motivo_consulta" id="motivo_consulta">
-                                            <!-- <option>*Motivo de Consulta</option>
-                                            <option value="50megas">Me interesa Plan 50 Megas</option>
-                                            <option value="100megas">Me interesa Plan 100 Megas</option>
-                                            <option value="200megas">Me interesa Plan 200 Megas</option>
-                                            <option value="500megas">Me interesa Plan 500 Megas</option> -->
+                                            <option>*Motivo de Consulta</option>
                                         </select>
                                         <small></small>
 									</div>
@@ -544,7 +540,7 @@
                 <!-- Image Column -->
                 <div class="image-column col-lg-7 col-md-12 col-sm-12">
                     <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="pattern-layer" style="background-image: url(images/resource/faq-pattern.png)"></div>
+                        <div class="pattern-layer" style="background-image: url(assets/images/contactanos/faq-pattern.png)"></div>
                         <div class="image">
                             <img src="assets/images/planes/faq.png" class="img-faq" alt="" />
                         </div>
@@ -610,7 +606,7 @@
                             <ul class="footer__widget-post">
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#!"><img src="assets/img/blog/w_01.jpg" alt=""></a>
+                                        <a href="#!"><img src="#" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <span class="date">02 Apr 2021</span>
@@ -619,7 +615,7 @@
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#!"><img src="assets/img/blog/w_02.jpg" alt=""></a>
+                                        <a href="#!"><img src="#" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <span class="date">02 Apr 2021</span>
@@ -628,7 +624,7 @@
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="#!"><img src="assets/img/blog/w_03.jpg" alt=""></a>
+                                        <a href="#!"><img src="#" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <span class="date">02 Apr 2021</span>
@@ -707,6 +703,19 @@
             disableOnInteraction: false,
         }
     });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        var arr = ['*Motivo Consulta','Plan Residencial','Plan PYME','Plan Empresarial','Soporte Técnico','Otro'];
+        
+        sale = '<select name="">';
+        for(i=0; i < arr.length; i++){
+            sale += '<option style="background-color:var(--dark-color-eight);" value="'+arr[i]+'">'+arr[i]+'</option>';
+        };
+        sale += '</select>';
+        $("#motivo_consulta").html(sale);
+    })
     </script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.min.js"></script>

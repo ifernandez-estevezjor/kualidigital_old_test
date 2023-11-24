@@ -243,11 +243,11 @@
                     <form action="#" id="signup" class="form" method="post" enctype="multipart/form-data">
                         <div class="row clearfix">
                             <div class="form-field col-md-4 col-lg-12 col-sm-12">
-                                <input class="form-control" type="text" name="nombre_completo" id="nombre_completo" autocomplete="off" placeholder="Nombre Completo">
+                                <input class="form-control" type="text" name="nombre_completo" id="nombre_completo" autocomplete="off" placeholder="*Nombre Completo">
                                 <small></small>
                             </div>
                             <div class="form-field col-md-4 col-lg-6 col-sm-12">
-                                <input class="form-control" type="tel" name="tel_celular" id="tel_celular" autocomplete="off" placeholder="Teléfono Celular">
+                                <input class="form-control" type="tel" name="tel_celular" id="tel_celular" autocomplete="off" placeholder="*Teléfono Celular">
                                 <small></small>
                             </div>
                             <div class="form-field col-md-4 col-lg-6 col-sm-12">
@@ -263,7 +263,7 @@
                                 <small></small>
 							</div>
                             <div class="form-field col-md-4 col-lg-6 col-sm-12">
-                                <input class="form-control" type="text" name="colonia_localidad" id="colonia_localidad" autocomplete="off" placeholder="Colonia o Localidad">
+                                <input class="form-control" type="text" name="colonia_localidad" id="colonia_localidad" autocomplete="off" placeholder="*Colonia o Localidad">
                                 <small></small>
                             </div>
                             <div class="form-field col-md-4 col-lg-6 col-sm-12">
@@ -271,9 +271,10 @@
                                 <small></small>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 mb-3 text-center custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" name="aviso_privacidad" id="aviso_privacidad">
-                                <label class="custom-control-label" for="customCheck1"><a href="aviso-de-privacidad.html" class="text-secondary">*Acepto Aviso de Privacidad</a></label>
-                                <small></small>
+								<input type="radio" class="btn-check" name="btnradiopriv" id="btnradio3" value="aceptado"> 
+								<label for="btnradio3">*Acepto Aviso de Privacidad<a href="aviso-de-privacidad.html" class="text-dark" target="_blank"> (Ver)</a></label>
+                                <br>
+                                <small id="output"></small>
 							</div>
                             <div class="col-md-12 col-lg-12 col-sm-12 form-group text-center">
 								<button class="btn-contratar" type="submit" value="Submit" name="submitForm" id="submit"><span class="txt text-white">Enviar</span></button>
@@ -529,6 +530,6 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/municipios.js"></script>
     <script src="assets/js/select_estados.js"></script>
-    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/validation-streaming.js"></script>
 </body>
 </html>
