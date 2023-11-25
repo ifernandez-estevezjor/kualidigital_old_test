@@ -7365,7 +7365,7 @@ h6 {
 }
 
 .products-box{
-    margin-left: 200px;
+    margin-left: 280px;
 }
 
 .product-name{
@@ -7449,10 +7449,10 @@ h6 {
         padding-left: var(--padding-left-20);
         padding-right: var(--padding-right-20);
     }
-    .box-contratar{
+    /*.box-contratar{
         width: 120px;
         height: 260px;
-    }
+    }*/
     .text-contratar-1{
         font-size: 15px;
         text-align: center;
@@ -7460,17 +7460,18 @@ h6 {
     .text-contratar-2{
         font-size: 15px;
         text-align: center;
-        margin-top: 28px;
+        margin-top: 18px;
     }
     .text-contratar-3{
         font-size: 15px;
         text-align: center;
-        margin-left: -10px;
-        margin-top: 12px;
     }
     .text-contratar{
         font-size: 15px;
         text-align: center;
+    }
+    .swiper{
+        margin-top: -50px;
     }
     .middle-content{
         margin-left: -320px;
@@ -7486,5 +7487,4 @@ h6 {
     .features{
         margin-left: -260px;
     }
-    
 }

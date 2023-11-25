@@ -141,3 +141,11 @@
 - Corrección y modificaciones visuales al diseño de las páginas en general.
 - Modificación y validación de campos para el formulario de Contacto en la página Contáctanos (revisar validación para el check del Aviso de Privacidad). PENDIENTE
 - Revisión y modificaciones al diseño responsivo.
+
+# Modificaciones 24/11/2023
+- Integración del buscador de sucursales dentro del mapa Google Maps en la página Contáctanos. NOTA: Por el momento se usó la herramienta básica de Google Maps.
+- Funcionamiento de los formularios para planes, streaming, vacantes y contáctanos (Realizar pruebas en producción). PENDIENTE
+- Corrección y modificaciones visuales al diseño de las páginas en general.
+- Revisión y modificaciones al diseño responsivo.
+- Corrección y modificaciones visuales al formulario de vacantes en la página Nosotros.
+- Se quitó el producto VectorMax a petición del área de Marketing.

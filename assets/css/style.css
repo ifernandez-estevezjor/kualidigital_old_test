@@ -1626,11 +1626,15 @@ display:none;
 }
 
 .text-contratar-1{
-	margin-top: 28px;
+	margin-top: 18px;
 }
 
 .text-contratar{
-	margin-top: 12px;
+	margin-top: 0px;
+}
+
+.text-contratar-5{
+	margin-top: -15px;
 }
 
 /*.clients-section{
