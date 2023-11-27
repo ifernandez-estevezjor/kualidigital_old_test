@@ -7409,7 +7409,7 @@ h6 {
         margin-left: -30px;
     }
     .thm-btn{
-        margin-right: 50px;
+        margin-right: 0px;
     }
     .img-network-3{
         width: 250px;
@@ -7471,7 +7471,7 @@ h6 {
         text-align: center;
     }
     .swiper{
-        margin-top: -50px;
+        /*margin-top: -50px;*/
     }
     .middle-content{
         margin-left: -320px;
@@ -7486,5 +7486,40 @@ h6 {
     }
     .features{
         margin-left: -260px;
+    }
+    .client-benifit__expernice-box{
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .pricing-section-four{
+        margin-top: -10px;
+    }
+    .pricing-section-two.style-two{
+        margin-top: -40px;
+    }
+    .thm-btn--2{
+        margin-right: 50px;
+    }
+    .clients-section{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .text-resp-white{
+        color: #ffffff;
+    }
+    .services-section .lower-section{
+        margin-top: -80px;
+    }
+    .sidebar-page-container{
+        margin-top: -40px;
+    }
+    .pricing-section{
+        margin-top: -100px;
+    }
+    .icon-list-resp{
+        margin-top: 50px;
+    }
+    .price-block .lower-box{
+        margin-top: 40px;
     }
 }

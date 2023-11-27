@@ -1001,7 +1001,7 @@
 
 .pricing-section-four{
 	position:relative;
-	padding:110px 0px 70px;
+	padding:110px 0px 20px;
 	background-color:#fafafa;
 	background-position:left top;
 	background-repeat:no-repeat;
@@ -2554,7 +2554,7 @@ display:none;
 
 .faq-section{
 	position:relative;
-	padding:100px 0px 50px;
+	padding:80px 0px 0px;
 	background-attachment:fixed;
 	background-size:cover;
 }
@@ -2966,7 +2966,7 @@ display:none;
 
 .pricing-section-two{
 	position:relative;
-	padding:110px 0px 110px;
+	padding:110px 0px 0px;
 	background-color:#fdf6f6;
 	background-size:cover;
 }
@@ -7159,7 +7159,7 @@ display:none;
 
 .about-section {
     position: relative;
-    padding: 0px 0px 80px;
+    padding: 0px 0px 40px;
     background-color: #f9f9f9;
     background-position: left bottom;
     background-repeat: no-repeat;
@@ -7417,7 +7417,7 @@ display:none;
 .form-column{
 	background-color: var(--dark-color-eight);
 	padding: 30px;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 
 .client-form {
