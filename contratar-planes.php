@@ -37,11 +37,11 @@ $estado = $_POST['estado'];
 $municipio = $_POST['municipio'];
 $colonia_localidad = $_POST['colonia_localidad'];
 $codigo_postal = $_POST['codigo_postal'];
-$aviso_privacidad = $_POST['aviso_privacidad'];
+$btnradiopriv = $_POST['btnradiopriv'];
 
-$destinatario = 'marketing.digital@kualidigital.com, test@kualidigital.com';
+$destinatario = 'test@kualidigital.com';
 $asunto = 'Formulario Contratacion de Planes';
-$cuerpo = "Nombre: $nombre_completo\nPlanes: $planes\nTeléfono Celular: $tel_uno\nOtro Telefono: $tel_dos\Estado: $estado\nMunicipio: $municipio\nColonia o Localidad: $colonia_localidad\nCodigo Postal: $codigo_postal\nAviso de Privacidad: $aviso_privacidad";
+$cuerpo = "Nombre: $nombre_completo\nPlanes: $planes\nTeléfono Celular: $tel_uno\nOtro Telefono: $tel_dos\Estado: $estado\nMunicipio: $municipio\nColonia o Localidad: $colonia_localidad\nCodigo Postal: $codigo_postal\nAviso de Privacidad: $btnradiopriv";
 $headers = "From: $planes\r\nReply-To: $planes\r\n";
 
 mail($destinatario, $asunto, $cuerpo, $headers);
