@@ -155,3 +155,9 @@
 - Corrección y modificaciones visuales al diseño de las páginas en general.
 - Revisión y modificaciones al diseño responsivo.
 - Carga de la página para revisión y pruebas en línea.
+
+# Modificaciones Producción 28/11/2023
+- Funcionamiento de los formularios para planes, streaming, vacantes y contáctanos. PENDIENTE
+- Corregir la validación del Aviso de Privacidad.
+- Corrección y modificaciones visuales al diseño de las páginas en general. NOTA: Detalles que van surgiendo.
+- Se modificaron los enlaces ancla de test a producción.
