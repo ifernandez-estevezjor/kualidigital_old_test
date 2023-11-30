@@ -161,3 +161,8 @@
 - Corregir la validación del Aviso de Privacidad.
 - Corrección y modificaciones visuales al diseño de las páginas en general. NOTA: Detalles que van surgiendo.
 - Se modificaron los enlaces ancla de test a producción.
+
+# Modificaciones Producción 29/11/2023
+- Funcionamiento de los formularios para planes, streaming, vacantes y contáctanos. PENDIENTE
+- Corregir la validación del Aviso de Privacidad.
+- Corregir el input Área de Interés y Adjuntar Archivo en formulario vacantes. PENDIENTE
