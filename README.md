@@ -166,3 +166,8 @@
 - Funcionamiento de los formularios para planes, streaming, vacantes y contáctanos. PENDIENTE
 - Corregir la validación del Aviso de Privacidad.
 - Corregir el input Área de Interés y Adjuntar Archivo en formulario vacantes. PENDIENTE
+
+# Modificaciones Producción 30/11/2023
+- Funcionamiento de los formularios para planes, streaming, vacantes y contáctanos. PENDIENTE
+- Corregir la validación del Aviso de Privacidad. PENDIENTE
+- Corregir el input Área de Interés y Adjuntar Archivo en formulario vacantes. PENDIENTE
