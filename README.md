@@ -171,3 +171,14 @@
 - Funcionamiento de los formularios para planes, streaming, vacantes y contáctanos. PENDIENTE
 - Corregir la validación del Aviso de Privacidad. PENDIENTE
 - Corregir el input Área de Interés y Adjuntar Archivo en formulario vacantes. PENDIENTE
+
+# Modificaciones Test 04/12/2023
+- Se cambió el ícono del preloader. Solicitar una medida más grande.
+- Se cambió el banner del hero en el index.
+- Se ocultó el botón Mi Cuenta.
+- Modificación en los colores de los textos y botones para la página en general.
+- Cambio en los íconos del contenedor en el index.
+- Se modificaron los contenedores en la sección de planes en el index.
+- Modificación en colores de los títulos en la sección Elegirnos, siguen pendiente cambiar los íconos.
+- Se modificaron los colores de los textos en la sección Streaming en el index.
+- Se cambió el logo de Kuali.
