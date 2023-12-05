@@ -182,3 +182,4 @@
 - Modificación en colores de los títulos en la sección Elegirnos, siguen pendiente cambiar los íconos.
 - Se modificaron los colores de los textos en la sección Streaming en el index.
 - Se cambió el logo de Kuali.
+- Formulario de vacantes funcionando.
