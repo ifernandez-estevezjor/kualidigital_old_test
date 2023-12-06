@@ -183,3 +183,12 @@
 - Se modificaron los colores de los textos en la sección Streaming en el index.
 - Se cambió el logo de Kuali.
 - Formulario de vacantes funcionando.
+
+# Modificaciones Test/Producción 05/12/2023
+- Se cambió el banner del hero en el index.
+- Corrección del fondo en la sección del footer para toda la plantilla.
+- Cambio de colores en elementos del hero en el index.
+- Modificaciones ortográficas.
+- Se cambió el color del punto en el cursor.
+- Se cambió el color del hover en las redes sociales del footer.
+- Se agregaron 2 artículos para el blog y se actualizaron los enlaces para dirigir a cada artículo.

@@ -3494,7 +3494,7 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #FF1749;
+    background-color: #e5077e;
     content: "";
     z-index: -1;
     opacity: 0;
@@ -4196,7 +4196,7 @@ h6 {
     left: 0;
     bottom: 0;
     content: "";
-    background-color: #FF1749;
+    background-color: #e5077e;
     width: 4px;
     height: 98px;
     clip-path: polygon(0px 0px, 100% 4.96%, 100% 97.06%, 0% 100%);
@@ -4365,7 +4365,7 @@ h6 {
     transform: translateX(-50%);
     width: 143px;
     height: 2px;
-    background-color: #FF1749;
+    background-color: #1c355e;
 }
 
 .client-benifit__shape::before {
@@ -4376,7 +4376,7 @@ h6 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     content: "";
-    background-color: #FF1749;
+    background-color: #1c355e;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -4873,7 +4873,7 @@ h6 {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    background-color: #FF1749;
+    background-color: #e5077e;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -7470,7 +7470,7 @@ h6 {
 }
 
 .open-hour__icon {
-    background: #FF1749;
+    background: #e5077e;
     width: 74px;
     height: 74px;
     border-radius: 5px;
@@ -7543,9 +7543,14 @@ h6 {
     font-weight: 700;
 }
 
-/*.footer__area, .footer__main{
-    background-color: #0e0e14;
-}*/
+.footer__area, .footer__main{
+    /*background-color: #0e0e14;*/
+    background-color: #000000;
+}
+
+.footer__politics{
+    background-color: #000000;
+}
 
 .footer__logo{
     width: 200px;
