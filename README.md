@@ -192,3 +192,10 @@
 - Se cambió el color del punto en el cursor.
 - Se cambió el color del hover en las redes sociales del footer.
 - Se agregaron 2 artículos para el blog y se actualizaron los enlaces para dirigir a cada artículo.
+
+# Modificaciones Test/Producción 06/12/2023
+- Ajuste de la imagen del banner en la sección Hero del Index.
+- Ajuste de la imagen del banner en la sección Hero del Index en el diseño responsivo.
+- Se agregó el producto VectorMax nuevamente.
+- Modificaciones de estilos en la barra de navegación.
+- Modificaciones de estilos y textos en el Index.

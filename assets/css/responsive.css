@@ -693,8 +693,5 @@
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px){
-	.hero__style-2{
-		background-size: 100%;
-		background-repeat: no-repeat;
-	}
+	
 }

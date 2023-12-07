@@ -2489,7 +2489,7 @@ h6 {
 .main_menu ul li:hover>a,
 .main_menu ul li.active>a,
 .sticky-header .main_menu ul li.active>a {
-    color: #e50e7e;
+    color: #1c355e;
 }
 .main_menu_index ul li:hover>a,
 .main_menu_index ul li.active>a,
@@ -2604,7 +2604,7 @@ h6 {
 
 .main_menu ul li ul.sub-menu li:hover>a,
 .main_menu ul li ul.sub-menu li.active>a {
-    color: #e50e7e;
+    color: #1c355e;
 }
 .main_menu_index ul li ul.sub-menu li:hover>a,
 .main_menu_index ul li ul.sub-menu li.active>a {
@@ -4126,7 +4126,7 @@ h6 {
 }
 
 .hero__style-2 {
-    min-height: 1190px;
+    min-height: 850px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -4134,7 +4134,7 @@ h6 {
 
 @media (max-width: 1199px) {
     .hero__style-2 {
-        min-height: 1050px;
+        min-height: 600px;
     }
 }
 
@@ -4142,6 +4142,7 @@ h6 {
     -webkit-transform: translateY(-150px);
     -ms-transform: translateY(-150px);
     transform: translateY(-150px);
+    margin-top: 260px;
 }
 
 .hero__style-2 .hero__content .title {
@@ -4158,6 +4159,11 @@ h6 {
     .hero__style-2 .hero__content .title {
         font-size: 27px;
         line-height: 1.4;
+    }
+    .hero__style-2 .hero__content {
+        -webkit-transform: translateY(-150px);
+        -ms-transform: translateY(-150px);
+        transform: translateY(-150px);
     }
 }
 
@@ -4179,7 +4185,7 @@ h6 {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.11);
-    margin-top: -395px;
+    margin-top: -214px;
     position: relative;
 }
 
@@ -4187,6 +4193,7 @@ h6 {
     .client-benifit {
         padding: 40px 20px;
         padding-bottom: 60px;
+        margin-top: -150px;
     }
 }
 
@@ -7535,7 +7542,7 @@ h6 {
 }
 
 .products-box{
-    margin-left: 280px;
+    /*margin-left: 280px;*/
 }
 
 .product-name{

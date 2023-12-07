@@ -2078,7 +2078,9 @@ img {
 
 .sec-title .text {
 	margin-top: var(--margin-top-50);
-	font-size: 20px;
+	font-size: 25px;
+	margin-right: 110px;
+	color: #1c355e;
 }
 
 .sec-title.light .text,
