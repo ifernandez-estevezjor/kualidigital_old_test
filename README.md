@@ -199,3 +199,10 @@
 - Se agregó el producto VectorMax nuevamente.
 - Modificaciones de estilos en la barra de navegación.
 - Modificaciones de estilos y textos en el Index.
+
+# Modificaciones Test/Producción 07/12/2023
+- Se cambió la imagen del breadcrumb para los blogs.
+- Modificaciones visuales (colores, textos) para los blogs.
+- Se cambiaron las imágenes del artículo del blog.
+- Modificaciones visuales (colores) en la página Index.
+- Modificaciones visuales (colores, text) en el Index.

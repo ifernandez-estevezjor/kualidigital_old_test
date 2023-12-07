@@ -2069,7 +2069,7 @@ img {
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #642680;
+    color: #1c355e;
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: var(--margin-bottom-15);
@@ -2224,7 +2224,7 @@ img {
 }
 
 .sec-title-three h2 {
-	color: var(--dark-color-four);
+	color: #1c355e;
 	font-family: 'Roboto', sans-serif;
 }
 

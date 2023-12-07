@@ -1924,7 +1924,7 @@
 }
 
 .span-todo{
-	color: #642680;
+	color: #1c355e;
 	font-size: 34px;
 }
 
@@ -4650,7 +4650,26 @@ display:none;
 	background-size:cover;
 }
 
+.page-title-blog{
+	position:relative;
+	overflow:hidden;
+	padding:140px 0px;
+	background-size:cover;
+}
+
 .page-title:before{
+	position:absolute;
+	content:'';
+	left:0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	background: #010C3A;
+	background: -webkit-linear-gradient(to right, #010C3A 0%, rgba(255,255,255,0) 100%);
+	background: -moz-linear-gradient(to right, #010C3A 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, #010C3A 0%, rgba(255,255,255,0) 100%);
+}
+.page-title-blog:before{
 	position:absolute;
 	content:'';
 	left:0px;
@@ -4667,12 +4686,29 @@ display:none;
 	color:var(--white-color);
 	padding-bottom:var(--padding-bottom-15);
 }
+.page-title-blog h2{
+	color:var(--white-color);
+	padding-bottom:var(--padding-bottom-15);
+}
 
 .page-title .bread-crumb{
 	position: relative;
 }
+.page-title-blog .bread-crumb{
+	position: relative;
+}
 
 .page-title .bread-crumb li{
+	position: relative;
+	font-weight: 500;
+	display:inline-block;
+	text-transform: uppercase;
+	font-size: var(--font-15);
+	color: var(--white-color);
+	margin-right: var(--margin-right-15);
+	padding-right: var(--padding-right-15);
+}
+.page-title-blog .bread-crumb li{
 	position: relative;
 	font-weight: 500;
 	display:inline-block;
@@ -4693,13 +4729,30 @@ display:none;
 	font-size: var(--font-15);
 	color: var(--white-color);
 }
+.page-title-blog .bread-crumb li:before{
+	position: absolute;
+	right: -3px;
+	top:0px;
+	color: #ffffff;
+    content: "|";
+	font-weight:400;
+	font-size: var(--font-15);
+	color: var(--white-color);
+}
 
 .page-title .bread-crumb li:last-child{
 	padding-right: 0;
 	margin-right: 0;
 }
+.page-title-blog .bread-crumb li:last-child{
+	padding-right: 0;
+	margin-right: 0;
+}
 
 .page-title .bread-crumb li:last-child:before{
+	display: none;
+}
+.page-title-blog .bread-crumb li:last-child:before{
 	display: none;
 }
 
@@ -4712,9 +4765,25 @@ display:none;
 	-o-transition: all 300ms ease;
 	transition: all 300ms ease;	
 }
+.page-title-blog .bread-crumb li a{
+	font-weight: 500;
+	color: var(--main-color);
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;	
+}
 
 .page-title .bread-crumb li a:hover{
 	color: var(--white-color);
+}
+.page-title-blog .bread-crumb li a:hover{
+	color: var(--white-color);
+}
+
+.text-title-blog{
+	color: #1c355e;
 }
 
 /*** 
@@ -5310,6 +5379,7 @@ display:none;
 	padding-bottom:var(--padding-bottom-5);
 	margin-bottom:var(--margin-bottom-10);
 	border-bottom:1px solid var(--dark-color-two);
+	color: #e5077e;
 }
 
 .sticky-top{
@@ -5347,7 +5417,7 @@ display:none;
 	left:0px;
 	content: "\f187";
 	font-weight:600;
-	color:var(--main-color);
+	color:#e5077e;
 	font-family: "Flaticon";
 }
 
@@ -5536,7 +5606,7 @@ display:none;
 }
 
 .sidebar .popular-posts .post .text a{
-	color:var(--dark-color-two);
+	color:#1c355e;
 	transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-webkit-transition:all 0.3s ease;
@@ -5749,7 +5819,7 @@ display:none;
 	position:absolute;
 	left:0px;
 	top:1px;
-	color:#7a7a7a;
+	color:#e5077e;
 	font-size:var(--font-15);
 	margin-right:var(--margin-right-5);
 }
@@ -5906,6 +5976,15 @@ display:none;
 	color:var(--main-color);
 }
 
+.page-title-blog .bread-crumb li a {
+    font-weight: 500;
+    color: #e5077e;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
 /*** 
 
 ====================================================================
@@ -7838,7 +7917,7 @@ display:none;
 }
 
 .sec-title-three h2 {
-    color: var(--dark-color-four);
+    color: #1c355e;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -8243,7 +8322,7 @@ button, a:hover, a:focus, a:visited {
 }
 
 .span-nuestros, .title-blog-1{
-	color: #642680;
+	color: #1c355e;
 }
 
 .span-productos, .title-blog-2{
